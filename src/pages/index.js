@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -6,20 +7,23 @@ import SEO from '../components/seo'
 export default class IndexPage extends Component {
   constructor(props) {
     super(props)
+
+    let maxRow = 0,
+      maxCol = 0
+    props.data.allSitzeYaml.edges.forEach(({ node: { row, column } }) => {
+      if (row && row > maxRow) {
+        maxRow = row
+      }
+      if (column && column > maxCol) {
+        maxCol = column
+      }
+    })
+
     this.state = {
-      rows: 0,
-      columns: 0,
+      rows: maxRow,
+      columns: maxCol,
     }
-    this._handleColumns = this._handleColumns.bind(this)
-    this._handleRows = this._handleRows.bind(this)
-  }
-
-  _handleRows(e) {
-    this.setState({ rows: e.target.value })
-  }
-
-  _handleColumns(e) {
-    this.setState({ columns: e.target.value })
+    console.log(this.state)
   }
 
   _renderElements() {
@@ -45,16 +49,7 @@ export default class IndexPage extends Component {
           style={{
             display: 'flex',
           }}
-        >
-          <div>
-            <h5>Rows</h5>
-            <input type="number" onChange={this._handleRows} />
-          </div>
-          <div>
-            <h5>Columns</h5>
-            <input type="number" onChange={this._handleColumns} />
-          </div>
-        </div>
+        />
         <div
           style={{
             display: 'grid',
@@ -68,3 +63,19 @@ export default class IndexPage extends Component {
     )
   }
 }
+
+export const query = graphql`
+  {
+    allSitzeYaml {
+      edges {
+        node {
+          name
+          url
+          partei
+          row
+          column
+        }
+      }
+    }
+  }
+`

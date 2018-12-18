@@ -1,3 +1,14 @@
+- label: Rietenberg
+  name: Sylvia Rietenberg
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=109562
+  partei: Bündnis 90/Die Grünen/GAL
+  row: 3
+  column: 0
+- label: Peck
+  name: Matthias Peck
+  row: 18
+  column: 13
+
 - sitz: 1
   label: Baumann
   name: Frank Baumann
@@ -177,11 +188,6 @@
   label: Reiners
   name: Otto Reiners
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=7143
-  partei: Bündnis 90/Die Grünen/GAL
-- sitz: 37
-  label: Rietenberg
-  name: Sylvia Rietenberg
-  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=109562
   partei: Bündnis 90/Die Grünen/GAL
 - sitz: 38
   label: Rosenau
