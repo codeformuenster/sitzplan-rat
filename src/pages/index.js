@@ -16,7 +16,6 @@ export default class IndexPage extends Component {
     props.data.allSitzeYaml.edges.forEach(({ node }) => {
       const { row, column } = node
       if (typeof row !== 'undefined') {
-        console.log(node)
         if (!Array.isArray(grid[column])) {
           grid[column] = []
         }
@@ -36,24 +35,22 @@ export default class IndexPage extends Component {
       rows: maxRow,
       columns: maxCol,
       grid,
-      seats: props.data.allSitzeYaml.edges,
     }
   }
 
   _renderElements() {
-    let elements = []
+    const elements = []
     for (let row = 0; row <= this.state.rows; row++) {
       for (let col = 0; col <= this.state.columns; col++) {
-        let sitz = null
         if (this.state.grid[col] && this.state.grid[col][row]) {
-          sitz = this.state.grid[col][row]
+          const sitz = this.state.grid[col][row]
           elements.push(
             <div
               key={`${row}-${col}`}
               className={cn({ sitz: sitz }, sitz.partei)}
             >
               {sitz.url ? (
-                <a href={sitz.url} target="_blank">
+                <a href={sitz.url} target="_blank" rel="noopener noreferrer">
                   {sitz.label}
                 </a>
               ) : (
@@ -72,7 +69,7 @@ export default class IndexPage extends Component {
   render() {
     return (
       <Layout>
-        <SEO title="Home" keywords={['gatsby', 'application', 'react']} />
+        <SEO title="Sitzplan Rat" keywords={['muenster', 'sitzplan', 'rat']} />
         <div
           className="sitze"
           style={{
