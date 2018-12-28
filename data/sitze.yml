@@ -1,13 +1,307 @@
+- label: Bürgermikro
+  column: 5
+  row: 0
+- label: Integrationsrat
+  column: 0
+  row: 1
+- label: BV
+  column: 1
+  row: 1
+- label: BV
+  column: 2
+  row: 1
+- label: BV
+  column: 3
+  row: 1
+- label: BV
+  column: 4
+  row: 1
+- label: BV
+  column: 5
+  row: 1
+- label: BV
+  column: 6
+  row: 1
+- label: Philipp
+  column: 4
+  row: 2
+- label: Wischnewski
+  column: 5
+  row: 2
+- label: Raffloer
+  column: 6
+  row: 2
+- label: Pohlmann
+  column: 7
+  row: 2
+- label: Schmanck
+  column: 8
+  row: 2
+- label: Mol
+  column: 9
+  row: 2
+- label: Schiller
+  column: 10
+  row: 2
 - label: Rietenberg
   name: Sylvia Rietenberg
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=109562
   partei: Bündnis 90/Die Grünen/GAL
   row: 3
   column: 0
+- label: Rohleder
+  row: 3
+  column: 1
+- label: Powroznik
+  name: Pascal Powroznik
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=109196
+  partei: Bündnis 90/Die Grünen/GAL
+  row: 3
+  column: 2
+- label: Rosenau
+  name: Klaus Rosenau
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108774
+  partei: Bündnis 90/Die Grünen/GAL
+  row: 4
+  column: 0
+- label: Wölter
+  name: Harald Wölter
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=65
+  partei: Bündnis 90/Die Grünen/GAL
+  row: 5
+  column: 0
+- label: Dr. Ozan
+  name: Dr. Didem Ozan
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=109344
+  partei: Bündnis 90/Die Grünen/GAL
+  row: 6
+  column: 0
+- label: Möltgen
+  name: Jörn Möltgen
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=1953
+  partei: Bündnis 90/Die Grünen/GAL
+  row: 7
+  column: 0
+- label: von Olberg
+  name: Robert von Olberg
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108607
+  partei: SPD
+  row: 8
+  column: 0
+- label: Steinmann
+  partei: SPD
+  row: 9
+  column: 0
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=7108
+- label: Seyfferth
+  name: Petra Seyfferth
+  partei: SPD
+  row: 10
+  column: 0
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108171
+- label: Liekefedt
+  name: Hedwig Liekefedt
+  row: 11
+  column: 0
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108979
+- label: Kollmann
+  row: 12
+  column: 0
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=2093
+- label: Köhnke
+  row: 13
+  column: 0
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108865
+- label: Koch
+  row: 14
+  column: 0
+- label: Kleyboldt
+  row: 15
+  column: 0
+- label: Dr. Jäger
+  row: 16
+  column: 0
+- label: Herwig
+  row: 17
+  column: 0
+- label: Hagemann
+  row: 18
+  column: 0
+- label: Köhn
+  row: 5
+  column: 2
+- label: Joksch
+  row: 5
+  column: 3
+- label: Kemper
+  row: 5
+  column: 4
+- label: Kirgil
+  row: 5
+  column: 5
+- label: Sagel
+  row: 5
+  column: 6
+- label: Peters
+  row: 6
+  column: 2
+- label: Möllers
+  row: 7
+  column: 2
+- label: Dr. Stein-Redent
+  row: 8
+  column: 2
+- label: Reiners
+  row: 9
+  column: 2
+- label: Kattentidt
+  row: 10
+  column: 2
+- label: Feldmann
+  row: 11
+  column: 2
+- label: Fastermann
+  row: 12
+  column: 2
+- label: Vilhjalmsson
+  row: 13
+  column: 2
+- label: Winkel
+  row: 14
+  column: 2
+- label: Schulze Wintzler
+  row: 15
+  column: 2
+- label: Kersting
+  row: 16
+  column: 2
+- label: Kubig-Steltig
+  row: 17
+  column: 2
+- label: Dr. Jung
+  row: 18
+  column: 2
+
+- label: Dreßen
+  column: 11
+  row: 4
+- label: Buddenbäumer
+  column: 11
+  row: 5
+- label: Von Göwels
+  column: 11
+  row: 6
+- label: Reismann
+  column: 11
+  row: 7
+- label: Bühl
+  column: 11
+  row: 8
+- label: Dr. Erber
+  column: 11
+  row: 9
+- label: Baumann
+  column: 11
+  row: 10
+- label: Weber
+  column: 11
+  row: 11
+- label: Stähler
+  column: 11
+  row: 12
+- label: Heinemann
+  column: 11
+  row: 13
+- label: Nicklas
+  column: 11
+  row: 14
+- label: Kleine Borgmann
+  column: 11
+  row: 15
+- label: Hartmann
+  column: 11
+  row: 16
+- label: Bloch
+  column: 11
+  row: 17
+- label: Leschniok
+  column: 11
+  row: 18
+
+- label: Gotthal
+  column: 9
+  row: 5
+- label: Beitelhoff
+  column: 9
+  row: 6
+- label: Schliemann
+  column: 9
+  row: 7
+- label: Von den Berg
+  column: 9
+  row: 8
+- label: Neumann
+  column: 9
+  row: 9
+- label: Halberstadt
+  column: 9
+  row: 10
+- label: Wenzel
+  column: 9
+  row: 11
+- label: Börgel
+  column: 9
+  row: 12
+- label: Loschelder
+  column: 9
+  row: 13
+- label: Leiße
+  column: 9
+  row: 14
+- label: Reuter
+  column: 9
+  row: 15
+- label: Berens
+  column: 9
+  row: 16
+- label: Varnhagen
+  column: 9
+  row: 17
+- label: Möllemann-Appelhoff
+  column: 9
+  row: 18
+
+- label: Denstorff
+  row: 19
+  column: 2
+- label: Wilkens
+  row: 19
+  column: 3
+- label: Heuer
+  row: 19
+  column: 4
+- label: Kupferschmidt
+  row: 19
+  column: 5
+- label: Lewe
+  row: 19
+  column: 6
+- label: Paal
+  row: 19
+  column: 7
+- label: Reinkemeier
+  row: 19
+  column: 8
 - label: Peck
   name: Matthias Peck
-  row: 18
-  column: 13
+  row: 19
+  column: 9
+- label: Dr. Müller-Tengelmann
+  row: 19
+  column: 10
+- label: Dr. Wernicke
+  column: 11
+  row: 19
 
 - sitz: 1
   label: Baumann
@@ -164,45 +458,20 @@
   name: Jutta Möllers
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108122
   partei: Bündnis 90/Die Grünen/GAL
-- sitz: 32
-  label: Möltgen
-  name: Jörn Möltgen
-  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=1953
-  partei: Bündnis 90/Die Grünen/GAL
-- sitz: 33
-  label:
-  name: Dr. Didem Ozan
-  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=109344
-  partei: Bündnis 90/Die Grünen/GAL
 - sitz: 34
   label: Peters
   name: Carsten Peters
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=7127
-  partei: Bündnis 90/Die Grünen/GAL
-- sitz: 35
-  label: Powroznik
-  name: Pascal Powroznik
-  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=109196
   partei: Bündnis 90/Die Grünen/GAL
 - sitz: 36
   label: Reiners
   name: Otto Reiners
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=7143
   partei: Bündnis 90/Die Grünen/GAL
-- sitz: 38
-  label: Rosenau
-  name: Klaus Rosenau
-  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108774
-  partei: Bündnis 90/Die Grünen/GAL
 - sitz: 39
   label: Stein-Redent
   name: Dr. Rita Stein-Redent
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108123
-  partei: Bündnis 90/Die Grünen/GAL
-- sitz: 40
-  label: Wölter
-  name: Harald Wölter
-  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=65
   partei: Bündnis 90/Die Grünen/GAL
 - sitz: 41
   label: Berens
