@@ -1,9 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
-    description:
-      'Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.',
-    author: '@gatsbyjs',
+    title: 'Sitzplan Rat Münster',
+    description: 'Der Sitzplan der Sitzungen des Rats Münster als Webseite',
+    author: '@codeformuenster',
   },
   plugins: [
     `gatsby-transformer-yaml`,
@@ -17,8 +16,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'Rat Münster',
+        short_name: 'Rat Münster',
         start_url: '/',
         background_color: '#663399',
         theme_color: '#663399',

@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import './sitzplan.css'
+import * as cn from 'classnames'
 
 export default class IndexPage extends Component {
   constructor(props) {
@@ -40,20 +41,29 @@ export default class IndexPage extends Component {
   }
 
   _renderElements() {
-    // for (const row of
     let elements = []
-    console.log(this.state.grid)
     for (let row = 0; row <= this.state.rows; row++) {
       for (let col = 0; col <= this.state.columns; col++) {
-        let label = null
+        let sitz = null
         if (this.state.grid[col] && this.state.grid[col][row]) {
-          label = this.state.grid[col][row].label
+          sitz = this.state.grid[col][row]
+          elements.push(
+            <div
+              key={`${row}-${col}`}
+              className={cn({ sitz: sitz }, sitz.partei)}
+            >
+              {sitz.url ? (
+                <a href={sitz.url} target="_blank">
+                  {sitz.label}
+                </a>
+              ) : (
+                sitz.label
+              )}
+            </div>
+          )
+        } else {
+          elements.push(<div key={`${row}-${col}`} />)
         }
-        elements.push(
-          <div key={`${row}-${col}`} className={label ? 'sitz' : ''}>
-            {label}
-          </div>
-        )
       }
     }
     return elements
@@ -63,11 +73,6 @@ export default class IndexPage extends Component {
     return (
       <Layout>
         <SEO title="Home" keywords={['gatsby', 'application', 'react']} />
-        <div
-          style={{
-            display: 'flex',
-          }}
-        />
         <div
           className="sitze"
           style={{

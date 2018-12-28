@@ -25,28 +25,40 @@
 - label: Philipp
   column: 4
   row: 2
+  partei: linke
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108986
 - label: Wischnewski
   column: 5
   row: 2
+  partei: linke
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=109433
 - label: Raffloer
   column: 6
   row: 2
 - label: Pohlmann
   column: 7
   row: 2
+  partei: piraten
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108199
 - label: Schmanck
   column: 8
   row: 2
+  partei: piraten
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=109564
 - label: Mol
   column: 9
   row: 2
+  partei: afd
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=109566
 - label: Schiller
   column: 10
   row: 2
+  partei: afd
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=109565
 - label: Rietenberg
   name: Sylvia Rietenberg
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=109562
-  partei: Bündnis 90/Die Grünen/GAL
+  partei: gruene
   row: 3
   column: 0
 - label: Rohleder
@@ -55,47 +67,47 @@
 - label: Powroznik
   name: Pascal Powroznik
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=109196
-  partei: Bündnis 90/Die Grünen/GAL
+  partei: gruene
   row: 3
   column: 2
 - label: Rosenau
   name: Klaus Rosenau
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108774
-  partei: Bündnis 90/Die Grünen/GAL
+  partei: gruene
   row: 4
   column: 0
 - label: Wölter
   name: Harald Wölter
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=65
-  partei: Bündnis 90/Die Grünen/GAL
+  partei: gruene
   row: 5
   column: 0
 - label: Dr. Ozan
   name: Dr. Didem Ozan
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=109344
-  partei: Bündnis 90/Die Grünen/GAL
+  partei: gruene
   row: 6
   column: 0
 - label: Möltgen
   name: Jörn Möltgen
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=1953
-  partei: Bündnis 90/Die Grünen/GAL
+  partei: gruene
   row: 7
   column: 0
 - label: von Olberg
   name: Robert von Olberg
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108607
-  partei: SPD
+  partei: spd
   row: 8
   column: 0
 - label: Steinmann
-  partei: SPD
+  partei: spd
   row: 9
   column: 0
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=7108
 - label: Seyfferth
   name: Petra Seyfferth
-  partei: SPD
+  partei: spd
   row: 10
   column: 0
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108171
@@ -203,6 +215,7 @@
 - label: Baumann
   column: 11
   row: 10
+  partei: cdu
 - label: Weber
   column: 11
   row: 11
@@ -264,6 +277,8 @@
 - label: Berens
   column: 9
   row: 16
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=109347
+  partei: fdp
 - label: Varnhagen
   column: 9
   row: 17
@@ -286,6 +301,8 @@
 - label: Lewe
   row: 19
   column: 6
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=7040
+  partei: cdu
 - label: Paal
   row: 19
   column: 7
@@ -307,127 +324,127 @@
   label: Baumann
   name: Frank Baumann
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=83
-  partei: CDU
+  partei: cdu
 - sitz: 2
   label: Beitelhoff
   name: Horst Karl Beitelhoff
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108948
-  partei: CDU
+  partei: cdu
 - sitz: 3
   label: Bloch
   name: Olaf Bloch
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=606
-  partei: CDU
+  partei: cdu
 - sitz: 4
   label: Börgel
   name: Peter Laurenz Börgel
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=109560
-  partei: CDU
+  partei: cdu
 - sitz: 5
   label: Buddenbäumer
   name: Heinz Georg Buddenbäumer
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=159
-  partei: CDU
+  partei: cdu
 - sitz: 6
   label: Bühl
   name: Astrid Bühl
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108968
-  partei: CDU
+  partei: cdu
 - sitz: 7
   label: Dreßen
   name: Olaf Dreßen
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108212
-  partei: CDU
+  partei: cdu
 - sitz: 8
   label: Erber
   name: Dr. Dietmar Erber
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=6965
-  partei: CDU
+  partei: cdu
 - sitz: 9
   label: Fehlauer
   name: Georg Fehlauer
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108478
-  partei: CDU
+  partei: cdu
 - sitz: 10
   label: Gotthal
   name: Sven Gotthal
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=109402
-  partei: CDU
+  partei: cdu
 - sitz: 11
   label: Halberstadt
   name: Richard-Michael Halberstadt
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=6996
-  partei: CDU
+  partei: cdu
 - sitz: 12
   label: Hartmann
   name: Gilbert Hartmann
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108926
-  partei: CDU
+  partei: cdu
 - sitz: 13
   label: Heinemann
   name: Jens Christian Heinemann
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=109494
-  partei: CDU
+  partei: cdu
 - sitz: 14
   label: Borgmann
   name: Bruno Kleine Borgmann
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=7007
-  partei: CDU
+  partei: cdu
 - sitz: 15
   label: Leiße
   name: Jan Leiße
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=109556
-  partei: CDU
+  partei: cdu
 - sitz: 16
   label: Leschniok
   name: Stefan Leschniok
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=109558
-  partei: CDU
+  partei: cdu
 - sitz: 17
   label: Loschelder
   name: Christel Loschelder
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=109403
-  partei: CDU
+  partei: cdu
 - sitz: 18
   label: Neumann
   name: Hans Neumann
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=109516
-  partei: CDU
+  partei: cdu
 - sitz: 19
   label: Nicklas
   name: Andreas Nicklas
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=6929
-  partei: CDU
+  partei: cdu
 - sitz: 20
   label: Reismann
   name: Karin Reismann
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=7016
-  partei: CDU
+  partei: cdu
 - sitz: 21
   label: Schliemann
   name: Josef Schliemann
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=109559
-  partei: CDU
+  partei: cdu
 - sitz: 22
   label: Stähler
   name: Angela Stähler
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108163
-  partei: CDU
+  partei: cdu
 - sitz: 23
   label: Von Göwels
   name: Walter von Göwels
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108599
-  partei: CDU
+  partei: cdu
 - sitz: 24
   label: Weber
   name: Stefan Weber
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=6974
-  partei: CDU
+  partei: cdu
 - sitz: 25
   label: Wenzel
   name: Manfred Wenzel
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=109557
-  partei: CDU
+  partei: cdu
 - sitz: 26
   label: Dieckmann
   name: Dr. Petra Dieckmann
@@ -533,8 +550,3 @@
   name: Fritz Pfau
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=2058
   partei: UWG-MS
-- sitz: 54
-  label: Lewe
-  name: Markus Lewe
-  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=7040
-  partei: CDU
