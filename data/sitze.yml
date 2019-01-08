@@ -376,7 +376,7 @@
   row: 6
 - label: ???
   name: 
-  partei:
+  partei: cdu
   url: 
   column: 9
   row: 7
@@ -429,48 +429,83 @@
   column: 9
   row: 15
 - label: Berens
+  name: Jörg Berens
   column: 9
   row: 16
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=109347
   partei: fdp
 - label: Varnhagen
+  name: Hans Vernhagen
+  partei: fdp
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=7000
   column: 9
   row: 17
 - label: Möllemann-Appelhoff
+  name: Carola Möllemann-Appelhoff
+  partei: fdp
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=39
   column: 9
   row: 18
 
 - label: Denstorff
+  name: Robin Denstorff
+  partei:
+  url: https://www.stadt-muenster.de/verwaltungsleitung/dezernat-fuer-planung-bau-wirtschaft-und-marketing.html
   row: 19
   column: 2
 - label: Wilkens
+  name: Cornelia Wilkens
+  partei: 
+  url: https://www.stadt-muenster.de/verwaltungsleitung/dezernat-fuer-soziales-integration-kultur-und-sport.html
   row: 19
   column: 3
 - label: Heuer
+  name: Wolfgang Heuer
+  partei:
+  url: https://www.stadt-muenster.de/verwaltungsleitung/dezernat-fuer-buergerservice-personal-organisation-ordnung-brandschutz-und-it.html
   row: 19
   column: 4
 - label: Kupferschmidt
+  name: Jürgen Kupferschmidt
+  partei:
+  url: https://www.stadt-muenster.de/ratsservice/kontakt.html
   row: 19
   column: 5
 - label: Lewe
+  name: Markus Lewe
+  partei: cdu
+  url: 
   row: 19
   column: 6
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=7040
-  partei: cdu
 - label: Paal
+  name: Thomas Paal
+  partei: 
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108683
   row: 19
   column: 7
 - label: Reinkemeier
+  name: Alfons Reinkemeier
+  partei:
+  url: https://www.stadt-muenster.de/verwaltungsleitung/dezernat-fuer-finanzen-und-beteiligungsmanagement.html
   row: 19
   column: 8
 - label: Peck
   name: Matthias Peck
+  partei:
+  url: https://www.stadt-muenster.de/verwaltungsleitung/dezernat-fuer-wohnungsversorgung-immobilien-und-nachhaltigkeit.html
   row: 19
   column: 9
-- label: Dr. Müller-Tengelmann
+- label: ???
+  name:
+  partei:
+  url:
   row: 19
   column: 10
-- label: Dr. Wernicke
+- label: ???
+  name:
+  partei:
+  url: 
   column: 11
   row: 19
 
