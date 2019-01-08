@@ -223,21 +223,39 @@
   row: 10
   column: 2
 - label: Feldmann
+  name: Doris Feldmann
+  partei: spd
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=109588
   row: 11
   column: 2
-- label: Fastermann
+- label: ???
+  name: 
+  partei:
+  url: 
   row: 12
   column: 2
 - label: Vilhjalmsson
+  name: Wendela-Beate Vilhjalmsson
+  partei: spd
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=485
   row: 13
   column: 2
 - label: Winkel
+  name: Maria Winkel
+  partei: spd
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108751
   row: 14
   column: 2
 - label: Schulze Wintzler
+  name: Anne Schulze Wintzler
+  partei: spd
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108125
   row: 15
   column: 2
 - label: Kersting
+  name:
+  partei: 
+  url: 
   row: 16
   column: 2
 - label: Kubig-Steltig
