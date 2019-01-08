@@ -61,7 +61,10 @@
   partei: gruene
   row: 3
   column: 0
-- label: Rohleder
+- label: Dieckmann
+  name: Dr. Petra Dieckmann
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=109006
+  partei: gruene
   row: 3
   column: 1
 - label: Powroznik
@@ -113,14 +116,22 @@
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108171
 - label: Liekefedt
   name: Hedwig Liekefedt
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108979
+  partei: spd
   row: 11
   column: 0
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108979
 - label: Kollmann
+  name: Thomas Kollmann
+  partei:spd
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=2093
   row: 12
   column: 0
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=2093
 - label: Köhnke
+  name: Katharina Köhnke
+  partei: spd
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108865
   row: 13
   column: 0
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108865
