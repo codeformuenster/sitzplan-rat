@@ -363,36 +363,69 @@
   row: 18
 
 - label: Gotthal
+  name: Sven Gotthal
+  partei: cdu
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=109402
   column: 9
   row: 5
 - label: Beitelhoff
+  name: Horst Karl Beitelhoff
+  partei: cdu
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108948
   column: 9
   row: 6
-- label: Schliemann
+- label: ???
+  name: 
+  partei:
+  url: 
   column: 9
   row: 7
-- label: Von den Berg
+- label: ???
+  name:
+  partei: cdu
+  url: 
   column: 9
   row: 8
 - label: Neumann
+  name: Hans Neumann
+  partei: cdu
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=109516
   column: 9
   row: 9
 - label: Halberstadt
+  name: Richard-Michael Halberstadt
+  partei: cdu
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=6996
   column: 9
   row: 10
 - label: Wenzel
+  name: Manfred Wenzel
+  partei: cdu
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=109557
   column: 9
   row: 11
-- label: Börgel
+- label: ???
+  name:
+  partei: cdu
+  url: 
   column: 9
   row: 12
 - label: Loschelder
+  name: Christel Loschelder
+  partei: cdu
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=109403
   column: 9
   row: 13
 - label: Leiße
+  name: Jan Leiße
+  partei: cdu
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=109556
   column: 9
   row: 14
-- label: Reuter
+- label: ???
+  name:
+  partei:
+  url: 
   column: 9
   row: 15
 - label: Berens
