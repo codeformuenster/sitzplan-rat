@@ -253,62 +253,113 @@
   row: 15
   column: 2
 - label: Kersting
-  name:
-  partei: 
-  url: 
+  name: Mathias Kersting
+  partei: spd
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108952
   row: 16
   column: 2
 - label: Kubig-Steltig
+  name: Gabriele Kubig-Steltig
+  partei: spd
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=5000
   row: 17
   column: 2
 - label: Dr. Jung
+  name: Dr. Michael Jung
+  partei: spd
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=7113
   row: 18
   column: 2
 
 - label: Dreßen
+  name: Olaf Dreßen
+  partei: cdu
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108212
   column: 11
   row: 4
 - label: Buddenbäumer
+  name: Hans Georg Buddenbäumer
+  partei: cdu
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=159
   column: 11
   row: 5
 - label: Von Göwels
+  name: Walter von Göwels
+  partei: cdu
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108599
   column: 11
   row: 6
 - label: Reismann
+  name: Karin Reismann
+  partei: cdu
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=7016
   column: 11
   row: 7
 - label: Bühl
+  name: Astrid Bühl
+  partei: cdu
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=7016
   column: 11
   row: 8
 - label: Dr. Erber
+  name: Dr. Dietmar Erber
+  partei: cdu
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=6965
   column: 11
   row: 9
 - label: Baumann
+  name: Frank Baumann
+  partei: cdu
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=83
   column: 11
   row: 10
   partei: cdu
 - label: Weber
+  name: Stefan Weber 
+  partei: cdu
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=6974
   column: 11
   row: 11
 - label: Stähler
+  name: Angela Stähler
+  partei: cdu
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108163
   column: 11
   row: 12
 - label: Heinemann
+  name: Christian Heinemann
+  partei: cdu
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=109494
   column: 11
   row: 13
 - label: Nicklas
+  name: Andreas Nicklas
+  partei: cdu
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=6929
   column: 11
   row: 14
 - label: Kleine Borgmann
+  name: Bruno Kleine Borgmann
+  partei: cdu
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=7007
   column: 11
   row: 15
 - label: Hartmann
+  name: Gilbert Hartmann
+  partei: cdu
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108926
   column: 11
   row: 16
 - label: Bloch
+  name: Olaf Bloch
+  partei: cdu
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=606
   column: 11
   row: 17
 - label: Leschniok
+  name: Stefan Leschniok
+  partei: cdu
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=109558
   column: 11
   row: 18
 
