@@ -175,30 +175,51 @@
   row: 5
   column: 3
 - label: Kemper
-  name: Annette
+  name: Annette Kemper
   partei: gruene
   url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108427
   row: 5
   column: 4
 - label: Kirgil
+  name: Fatima Kirgil
+  partei: linke
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=109487
   row: 5
   column: 5
 - label: Sagel
+  name: Rüdiger Sagel
+  partei: linke
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=2084
   row: 5
   column: 6
 - label: Peters
+  name: Carsten Peters
+  partei: gruene
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=7127
   row: 6
   column: 2
 - label: Möllers
+  name: Jutta Möllers
+  partei: gruene
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108122
   row: 7
   column: 2
-- label: Dr. Stein-Redent
+- label: Stein-Redent
+  name: Dr. Rita Stein-Redent
+  partei: gruene
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108123
   row: 8
   column: 2
 - label: Reiners
+  name: Otto Reiners
+  partei: gruene
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=7143
   row: 9
   column: 2
 - label: Kattentidt
+  name: Christoph Kattentidt
+  partei: gruene
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108916
   row: 10
   column: 2
 - label: Feldmann
