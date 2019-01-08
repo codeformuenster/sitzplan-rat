@@ -133,27 +133,51 @@
   row: 13
   column: 0
 - label: Koch
+  name: Marianne Koch
+  partei: spd
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=7031
   row: 14
   column: 0
 - label: Kleyboldt
+  name: Michael Kleyboldt
+  partei: spd
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=5195
   row: 15
   column: 0
 - label: Dr. Jäger
+  name: Dr. Cornelia Jäger
+  partei: spd
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=109619
   row: 16
   column: 0
 - label: Herwig
+  name: Marius Herwig
+  partei: spd
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=109503
   row: 17
   column: 0
 - label: Hagemann
+  name: Philipp Hagemann
+  partei: spd
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108170
   row: 18
   column: 0
 - label: Köhn
+  name: Raumund Köhn
+  partei: gruene
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108935
   row: 5
   column: 2
 - label: Joksch
+  name: Gerhard Joksch
+  partei: gruene
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=7435
   row: 5
   column: 3
 - label: Kemper
+  name: Annette
+  partei: gruene
+  url: https://www.stadt-muenster.de/sessionnet/sessionnetbi/kp0051.php?__kpenr=108427
   row: 5
   column: 4
 - label: Kirgil
