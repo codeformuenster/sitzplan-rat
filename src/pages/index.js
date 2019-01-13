@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { graphql } from 'gatsby'
 
+import Sitz from '../components/sitz'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import './sitzplan.css'
-import * as cn from 'classnames'
 
 export default class IndexPage extends Component {
   constructor(props) {
@@ -15,12 +15,28 @@ export default class IndexPage extends Component {
       maxCol = 0
     props.data.allSitzeYaml.edges.forEach(({ node }) => {
       const { row, column } = node
-      if (typeof row !== 'undefined') {
+      if (row !== null && column !== null) {
         if (!Array.isArray(grid[column])) {
           grid[column] = []
         }
 
-        grid[column][row] = node
+        if (node.url) {
+          const img_url = node.url.split('__kpenr=')[1]
+          if (img_url) {
+            node.img_url_id = img_url
+          }
+        }
+
+        const key = `${column}-${row}`
+
+        grid[column][row] = {
+          ...node,
+          ...{
+            showPopup: false,
+            key,
+            // onClick: () => this.onSitzClick(key),
+          },
+        }
 
         if (row && row > maxRow) {
           maxRow = row
@@ -38,28 +54,40 @@ export default class IndexPage extends Component {
     }
   }
 
+  onSitzClick = sitzKey => {
+    const newGrid = [...this.state.grid]
+    debugger
+    rowLoop: for (let row = 0; row <= this.state.rows; row++) {
+      for (let col = 0; col <= this.state.columns; col++) {
+        if (
+          this.state.grid[col] &&
+          this.state.grid[col][row] &&
+          this.state.grid[col][row].key === sitzKey
+        ) {
+          const newColumn = [...newGrid[col]]
+          newColumn[row] = {
+            ...this.state.grid[col][row],
+            ...{
+              showPopup: !this.state.grid[col][row].showPopup,
+            },
+          }
+          newGrid[col] = newColumn
+          break rowLoop
+        }
+      }
+    }
+    this.setState({ grid: newGrid })
+  }
+
   _renderElements() {
     const elements = []
     for (let row = 0; row <= this.state.rows; row++) {
       for (let col = 0; col <= this.state.columns; col++) {
         if (this.state.grid[col] && this.state.grid[col][row]) {
           const sitz = this.state.grid[col][row]
-          elements.push(
-            <div
-              key={`${row}-${col}`}
-              className={cn({ sitz: sitz }, sitz.partei)}
-            >
-              {sitz.url ? (
-                <a href={sitz.url} target="_blank" rel="noopener noreferrer">
-                  {sitz.label}
-                </a>
-              ) : (
-                sitz.label
-              )}
-            </div>
-          )
+          elements.push(<Sitz {...sitz} />)
         } else {
-          elements.push(<div key={`${row}-${col}`} />)
+          elements.push(<div key={`${col}-${row}`} />)
         }
       }
     }

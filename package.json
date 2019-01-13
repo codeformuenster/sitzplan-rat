@@ -2,6 +2,7 @@
   "name": "sitzplan-rat",
   "version": "1.0.0",
   "dependencies": {
+    "@tippy.js/react": "^1.1.1",
     "classnames": "^2.2.6",
     "gatsby": "^2.0.77",
     "gatsby-image": "^2.0.20",
@@ -15,7 +16,9 @@
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-image": "^2.0.0",
+    "react-popper": "^1.3.2"
   },
   "license": "Apache-2.0",
   "scripts": {
