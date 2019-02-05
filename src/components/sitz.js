@@ -29,7 +29,12 @@ const Sitz = ({ url, partei, label }) => {
       content={<SitzPopup partei={partei} label={label} sitz_id={sitz_id} />}
     >
       <div className={cn('sitz', partei)}>
-        <a href={url} target="_blank" rel="noopener noreferrer">
+        <a
+          className="sitz-link"
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           {label}
         </a>
       </div>
