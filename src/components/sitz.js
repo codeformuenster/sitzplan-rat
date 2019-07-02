@@ -37,6 +37,14 @@ const Sitz = ({ url, partei, label }) => {
         >
           {label}
         </a>
+        <a
+          className="sitz-link-first"
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {label.charAt(0)}
+        </a>
       </div>
     </Tippy>
   )

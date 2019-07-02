@@ -1,29 +1,67 @@
 .sitze {
   display: grid;
-  max-width: 960px;
+  max-width: 1200px;
   margin: auto;
+  grid-gap: 2px;
+}
+
+@media (max-width: calc(1200px + 2rem)) { 
+  .sitze {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 
 .sitz {
-  border: 1px solid;
+  /* border: 1px solid; */
+  border-radius: 3px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 11pt;
   height: 40px;
+  width: 100%;
   line-height: 40px;
   white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
   text-align: center;
-  padding: 0 2px;
+  padding: 2px;
+  background: white;
+  transition: 200ms;
 }
 
-.sitz .sitz-link {
+.sitz .sitz-link, .sitz-link-first {
   color: black;
-  text-decoration-style: dotted;
+  text-decoration: none;
 }
+
+.sitz-link-first {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .sitz {
+    height: 20px ;
+    width: 20px ;
+    line-height: normal;
+    margin: auto;
+  }
+
+  .sitz-link {
+    display: none;
+  }
+
+  .sitz-link-first {
+    display: block;
+  }
+}
+
+
 
 .spd .sitz-link,
-.cdu .sitz-link {
+.cdu .sitz-link,
+.spd .sitz-link-first, 
+.cdu .sitz-link-first {
   color: white;
 }
 
@@ -31,7 +69,7 @@
   background: #46962b;
 }
 
-.spd {
+.spd, .linke {
   background: #e3000f;
 }
 
@@ -48,9 +86,9 @@
   background: #ff8800;
 }
 
-.linke {
+/* .linke {
   border: 3px inset #ff0000;
-}
+} */
 
 .fdp {
   background: #ffed00;
