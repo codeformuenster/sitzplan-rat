@@ -6,6 +6,16 @@ import Img from 'react-image'
 
 import 'tippy.js/dist/tippy.css'
 
+const PARTYCOLORS = {
+  gruene: 'green',
+  spd: 'red',
+  linke: 'red',
+  cdu: 'black',
+  piraten: 'orange',
+  afd: 'blue',
+  fdp: 'yellow'
+}
+
 const SitzPopup = React.memo(({ label, sitz_id, partei }) => (
   <>
     <h4>{label}</h4>
@@ -18,7 +28,7 @@ const SitzPopup = React.memo(({ label, sitz_id, partei }) => (
   </>
 ))
 
-const Sitz = ({ url, partei, label }) => {
+const Sitz = ({ col, row, url, partei, label, highlight }) => {
   let sitz_id
   if (typeof url === 'string') {
     sitz_id = url.split('__kpenr=')[1]
@@ -28,7 +38,13 @@ const Sitz = ({ url, partei, label }) => {
       arrow={true}
       content={<SitzPopup partei={partei} label={label} sitz_id={sitz_id} />}
     >
-      <div className={cn('sitz', partei)}>
+      <div className={cn('sitz', partei)} style={{
+        gridColumnStart: col + 1,
+        gridColumnEnd: col + 2,
+        gridRowStart: row + 1,
+        gridRowEnd: row + 2,
+        backgroundColor: highlight ? PARTYCOLORS[partei] : 'grey'
+      }}>
         <a
           className="sitz-link"
           href={url}

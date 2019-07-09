@@ -6,6 +6,7 @@ html {
 body {
   margin: 0;
   background: #005b791a;
+  padding-bottom: 1rem;
 }
 article,
 aside,

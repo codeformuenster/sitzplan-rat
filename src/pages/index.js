@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { graphql } from 'gatsby'
 
+import Chart from '../components/chart'
+
 import Sitz from '../components/sitz'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -51,6 +53,8 @@ export default class IndexPage extends Component {
       rows: maxRow,
       columns: maxCol,
       grid,
+      parties: grid.flat().map(e => e.partei).reduce((b, c) => ((b[b.findIndex(d => d.name === c)] || b[b.push({ name: c, value: 0 }) - 1]).value++ , b), []),
+      clicked: 'all'
     }
   }
 
@@ -85,16 +89,19 @@ export default class IndexPage extends Component {
       for (let col = 0; col <= this.state.columns; col++) {
         if (this.state.grid[col] && this.state.grid[col][row]) {
           const sitz = this.state.grid[col][row]
-          elements.push(<Sitz {...sitz} />)
-        } else {
-          elements.push(<div key={`${col}-${row}`} />)
+          elements.push(<Sitz col={col} row={row} {...sitz} highlight={this.state.clicked == 'all' ? true : this.state.clicked == sitz.partei} />)
         }
+        // else {
+        //   elements.push(<div key={`${col}-${row}`} />)
+        // }
       }
     }
+
     return elements
   }
 
   render() {
+    console.log(this.state)
     return (
       <Layout>
         <SEO title="Sitzplan Rat" keywords={['muenster', 'sitzplan', 'rat']} />
@@ -106,6 +113,17 @@ export default class IndexPage extends Component {
           }}
         >
           {this._renderElements()}
+          <div style={{
+            gridColumnStart: Math.floor(this.state.columns / 2),
+            gridColumnEnd: Math.ceil(this.state.columns / 2) + 3,
+            gridRowStart: Math.floor(this.state.rows / 2),
+            gridRowEnd: Math.ceil(this.state.rows / 2) + 8,
+          }}>
+            {
+              this.state.parties &&
+              <Chart parties={this.state.parties.filter(e => e.name != null)} chartOnClick={(e) => this.setState({ clicked: e.name })}></Chart>
+            }
+          </div>
         </div>
       </Layout>
     )
