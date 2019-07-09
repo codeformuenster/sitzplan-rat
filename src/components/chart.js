@@ -4,13 +4,13 @@ import {
 } from 'recharts';
 
 const PARTYCOLORS = {
-    gruene: 'green',
-    spd: 'red',
-    linke: 'red',
+    gruene: '#46962b',
+    spd: '#e3000f',
+    linke: '#e3000f',
     cdu: 'black',
-    piraten: 'orange',
-    afd: 'blue',
-    fdp: 'yellow'
+    piraten: '#ff8800',
+    afd: '#009ce5',
+    fdp: '#ffed00'
 }
 
 const RADIAN = Math.PI / 180;
