@@ -35,7 +35,8 @@ const Chart = ({ parties, chartOnClick }) => {
                 fill="#8884d8"
                 labelLine={false}
                 label={renderCustomizedLabel}
-                innerRadius={'50%'}
+                innerRadius={'40%'}
+                paddingAngle={5}
                 onClick={(e) => (chartOnClick(e))}>
 
                 {
