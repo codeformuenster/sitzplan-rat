@@ -23,13 +23,6 @@ with open('config-core.json') as f:
 
 print(config)
 
-# Read Gremiuem (Rat)
-gremiumUrl = config.get('core').get('baseurl')
-LOGGER.debug("Base URL: %s", gremiumUrl)
-
-r = requests.get(gremiumUrl)
-gremium = r.json()
-
 def getMembers(oparlMembers):
 
     ## READ ALL MEMBERS FROM OPARL
@@ -92,14 +85,52 @@ def getMembers(oparlMembers):
 
 
 def writeSitzplanHtml():
-    html = '<html><body>'
 
+    # Read seats config
+    members = []
+    with open('config-members.json') as f:
+        members = json.load(f)
 
+    seats = {}
+    for member in members:
+        seats[member.get('seat')] = member
+
+    html = '<html><style> div {width:10%;height:80px;border:2x solid #eee} div.occ {border: 2px solid black} div.row {width:100%;border: 1px solid #ccc;clear: left;overflow: hidden;} div.row > div {float:left}</style><body>'
+
+    sitzplanRows = config.get('roomLayout').get('rows')
+    sitzplanCols = config.get('roomLayout').get('columns')
+
+    for row in range(sitzplanRows):
+        html = html + '<div class="row">'
+        for column in range(sitzplanCols):
+            seatId = '{}-{}'.format(row,column)
+            personData = {}
+            if seatId in seats:
+                personData = seats[seatId]
+                pName = personData.get('name')
+                html = html + '<div class="occ">{}</div>'.format(pName if pName else '')
+            else:
+                html = html + '<div></div>'
+        html = html + '</div>'
+
+    html = html + '</body></html>'
+
+    with open('sitzplan.html', 'w') as outfile:
+        outfile.write(html)
+
+    print(html)
 
 if os.path.isfile(CONFIG_MEMBERS):
     print("Members config file exists.")
 else:
+    # Read Gremiuem (Rat)
+    gremiumUrl = config.get('core').get('baseurl')
+    LOGGER.debug("Base URL: %s", gremiumUrl)
+
+    r = requests.get(gremiumUrl)
+    gremium = r.json()
+
     print("Writing members file")
     getMembers(gremium.get('membership'))
 
-
+writeSitzplanHtml()
