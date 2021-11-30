@@ -1,0 +1,9 @@
+{
+    "core": {
+        "baseurl": "https://oparl.stadt-muenster.de/bodies/0001/organizations/gr/258"
+    },
+    "roomLayout": {
+        "rows": 10,
+        "columns": 10
+    }
+}
