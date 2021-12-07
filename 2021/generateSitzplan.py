@@ -83,7 +83,6 @@ def getMembers(oparlMembers):
     with open(CONFIG_MEMBERS, 'w') as outfile:
         json.dump(members, outfile)
 
-
 def writeSitzplanHtml():
 
     # Read seats config
@@ -95,10 +94,66 @@ def writeSitzplanHtml():
     for member in members:
         seats[member.get('seat')] = member
 
-    html = '<html><style> div {width:10%;height:80px;border:2x solid #eee} div.occ {border: 2px solid black} div.row {width:100%;border: 1px solid #ccc;clear: left;overflow: hidden;} div.row > div {float:left}</style><body>'
-
     sitzplanRows = config.get('roomLayout').get('rows')
     sitzplanCols = config.get('roomLayout').get('columns')
+
+    html = '''<!doctype html><html lang="de">
+        <meta charset="utf-8">
+        <style>
+            div {{width:{}%;height:70px;border:2x solid #eee}}
+            div.row {{width:100%;border: 1px solid #fefefe;clear: left;}}
+            div.row > div {{float:left}}
+            .p-GRÜNE {{background-color:#3f3}}
+            .p-LINKE {{background-color:#f39}}
+            .p-VOLT {{background-color:#502379;color:white}}
+            .p-ÖDP {{background-color:#ff6400}}
+            .p-AFD {{background-color:#09f}}
+            .p-CDU {{background-color:#000;color:white}}
+            .p-SPD {{background-color:#f33}}
+            .p-OHNE {{color:white;background: repeating-linear-gradient(
+                45deg,
+                #606dbc,
+                #606dbc 10px,
+                #465298 10px,
+                #465298 20px
+                );}}
+            #member img {{
+                max-width:150px;
+                max-height:200px;
+             }}
+            #member {{
+                display:block;
+                position:absolute;
+                overflow:hidden;
+                background-color:yellow;
+                border: 1px solid black;
+                border-radius: 5px;
+                width: 200px;
+                text-align: center;
+                height: 260px;
+            }}
+            #member span {{
+                background-color: orange;
+                display: block;
+                padding: 4px 0;
+            }}
+            .occ {{
+                overflow:hidden;
+                border: 1px solid black;
+                cursor: pointer;
+                border-radius: 7px;
+                margin: 0 1px 0 0;
+            }}
+            div.occ span {{
+                margin: 4px 4px 0 4px;
+                display: inline-block;
+                font-size: 10pt;
+                overflow-wrap:break-word;
+            }}
+        </style>
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <body>
+        '''.format(7)
 
     for row in range(sitzplanRows):
         html = html + '<div class="row">'
@@ -108,12 +163,51 @@ def writeSitzplanHtml():
             if seatId in seats:
                 personData = seats[seatId]
                 pName = personData.get('name')
-                html = html + '<div class="occ">{}</div>'.format(pName if pName else '')
+                html = html + '<div data-id="{}" data-party="{}" class="occ p-{}"><span class="name">{}</span>{}</div>'.format(
+                    personData.get('pid'),
+                    personData.get('party'),
+                    personData.get('party'),
+                    pName if pName else '',
+                    personData.get('seat')
+                    )
             else:
                 html = html + '<div></div>'
         html = html + '</div>'
 
-    html = html + '</body></html>'
+    html = html + '''
+        <div id="member">
+            <span class="name">Max Muster</span>
+            <span class="party">Party</span>
+            <img class="photo" src="url" />
+        </div>
+        <script>
+            var errCount = 0;
+            $("#member .photo").on('error', function(e) {
+                event.stopPropagation();
+                if (errCount++ <= 1) {
+                    $("#member .photo").attr("src", "img/person.png");
+                }
+            });
+            $("div.occ").click(function(event){
+                const pid = $(this).data("id");
+                location.href="https://www.stadt-muenster.de/sessionnet/sessionnetbi/pe0051.php?__kpenr="+pid;
+            }).hover(function(event) {
+                errCount = 0;
+                const pid = $(this).data("id");
+                const name = $(this).find(".name").text();
+                const party = $(this).data("party");
+                const photoUrl = 'https://www.stadt-muenster.de/sessionnet/sessionnetbi/im/pe'+pid+'.jpg'
+                console.log("id", pid);
+                $("#member .name").html(name);
+                $("#member .party").html(party);
+                $("#member .photo").attr("src", photoUrl);
+                $("#member").css({top: event.clientY, left: event.clientX}).show();
+            }, function() {
+                $("#member").hide();
+            });
+        </script>
+        </body></html>
+        '''
 
     with open('sitzplan.html', 'w') as outfile:
         outfile.write(html)
