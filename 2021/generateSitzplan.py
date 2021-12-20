@@ -103,26 +103,38 @@ def writeSitzplanHtml():
             div {{width:{}%;height:70px;border:2x solid #eee}}
             div.row {{width:100%;border: 1px solid #fefefe;clear: left;}}
             div.row > div {{float:left}}
-            .p-GRÜNE {{background-color:#3f3}}
+            .occ {{
+                background-color:#ddd;
+                overflow:hidden;
+                border: 1px solid black;
+                cursor: pointer;
+                border-radius: 7px;
+                margin: 0 1px 0 0;
+                background-size: 50px;
+                background-repeat: no-repeat;
+                background-position: 0px center;
+            }}
+            div.occ span {{
+                margin: 4px 4px 0 50px;
+                display: inline-block;
+                font-size: 10pt;
+                overflow-wrap:break-word;
+            }}
+            .p-GRÜNE {{background-color:#64a12d}}
             .p-LINKE {{background-color:#f39}}
             .p-VOLT {{background-color:#502379;color:white}}
             .p-ÖDP {{background-color:#ff6400}}
             .p-AFD {{background-color:#09f}}
             .p-CDU {{background-color:#000;color:white}}
-            .p-SPD {{background-color:#f33}}
-            .p-OHNE {{color:white;background: repeating-linear-gradient(
-                45deg,
-                #606dbc,
-                #606dbc 10px,
-                #465298 10px,
-                #465298 20px
-                );}}
+            .p-SPD {{background-color:#E3000F}}
+            .p-FDP {{background-color:#ffdd00}}
+            .p-OHNE {{background-color:#aaa;}}
             #member img {{
                 max-width:150px;
                 max-height:200px;
              }}
             #member {{
-                display:block;
+                display:none;
                 position:absolute;
                 overflow:hidden;
                 background-color:yellow;
@@ -137,19 +149,6 @@ def writeSitzplanHtml():
                 display: block;
                 padding: 4px 0;
             }}
-            .occ {{
-                overflow:hidden;
-                border: 1px solid black;
-                cursor: pointer;
-                border-radius: 7px;
-                margin: 0 1px 0 0;
-            }}
-            div.occ span {{
-                margin: 4px 4px 0 4px;
-                display: inline-block;
-                font-size: 10pt;
-                overflow-wrap:break-word;
-            }}
         </style>
         <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
         <body>
@@ -163,12 +162,12 @@ def writeSitzplanHtml():
             if seatId in seats:
                 personData = seats[seatId]
                 pName = personData.get('name')
-                html = html + '<div data-id="{}" data-party="{}" class="occ p-{}"><span class="name">{}</span>{}</div>'.format(
+                html = html + '<div data-id="{}" data-party="{}" class="occ p-{}" style="{}"><span class="name">{}</span></div>'.format(
                     personData.get('pid'),
                     personData.get('party'),
                     personData.get('party'),
-                    pName if pName else '',
-                    personData.get('seat')
+                    'background-image: url(https://www.stadt-muenster.de/sessionnet/sessionnetbi/im/pe{}.jpg);'.format(personData.get('pid')),
+                    pName if pName else ''
                     )
             else:
                 html = html + '<div></div>'
@@ -176,8 +175,8 @@ def writeSitzplanHtml():
 
     html = html + '''
         <div id="member">
-            <span class="name">Max Muster</span>
-            <span class="party">Party</span>
+            <span class="name">Name</span>
+            <span class="party">Partei</span>
             <img class="photo" src="url" />
         </div>
         <script>
@@ -201,7 +200,11 @@ def writeSitzplanHtml():
                 $("#member .name").html(name);
                 $("#member .party").html(party);
                 $("#member .photo").attr("src", photoUrl);
-                $("#member").css({top: event.clientY, left: event.clientX}).show();
+                const maxHeight = $(document).height()-300
+                const maxWidth = $(document).width()-220
+                const ypos = (event.pageY > maxHeight) ? maxHeight : event.pageY;
+                const xpos = (event.pageX > maxWidth) ? maxWidth : event.pageX;
+                $("#member").css({top: ypos, left: xpos}).show();
             }, function() {
                 $("#member").hide();
             });
