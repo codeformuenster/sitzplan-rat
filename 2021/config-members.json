@@ -2,23 +2,23 @@
     {
         "name": "Olaf Bloch",
         "pid": "606",
-        "party": "",
+        "party": "CDU",
         "email": "",
-        "seat": ""
+        "seat": "16-12"
     },
     {
         "name": "Meik Bruns",
         "pid": "108066",
         "party": "CDU",
         "email": "bruns@cdu-muenster.de",
-        "seat": ""
+        "seat": "10-10"
     },
     {
         "name": "Astrid B\u00fchl",
         "pid": "108968",
-        "party": "",
+        "party": "CDU",
         "email": "",
-        "seat": ""
+        "seat": "11-12"
     },
     {
         "name": "Silke Busch",
@@ -30,9 +30,9 @@
     {
         "name": "Dietmar Erber",
         "pid": "6965",
-        "party": "",
+        "party": "CDU",
         "email": "",
-        "seat": ""
+        "seat": "9-12"
     },
     {
         "name": "Jan Gebker",
@@ -53,42 +53,42 @@
         "pid": "6975",
         "party": "CDU",
         "email": "greefrath@cdu-muenster.de",
-        "seat": ""
+        "seat": "8-12"
     },
     {
         "name": "Tobias Jainta",
         "pid": "7410",
         "party": "CDU",
         "email": "jainta@cdu-muenster.de",
-        "seat": ""
+        "seat": "8-10"
     },
     {
         "name": "Mathias Kersting",
         "pid": "108952",
-        "party": "",
+        "party": "CDU",
         "email": "rat@mathias-kersting.de",
-        "seat": ""
+        "seat": "12-10"
     },
     {
         "name": "Dr. Michael Klenner",
         "pid": "108148",
-        "party": "",
+        "party": "CDU",
         "email": "michael.klenner@lwk.nrw.de",
-        "seat": ""
+        "seat": "15-12"
     },
     {
         "name": "Stefan Leschniok",
         "pid": "109558",
         "party": "CDU",
         "email": "leschniok@cdu-muenster.de",
-        "seat": ""
+        "seat": "14-12"
     },
     {
         "name": "Babette Lichtenstein van Lengerich",
         "pid": "109943",
-        "party": "",
+        "party": "CDU",
         "email": "babette.lichtenstein@medienhaus-muenster.de",
-        "seat": ""
+        "seat": "11-10"
     },
     {
         "name": "Dr. Martin L\u00fccke",
@@ -109,7 +109,7 @@
         "pid": "6929",
         "party": "CDU",
         "email": "nicklas@cdu-muenster.de",
-        "seat": ""
+        "seat": "13-10"
     },
     {
         "name": "Martin Peitzmeier",
@@ -121,44 +121,44 @@
     {
         "name": "Susanne Schulze Bockeloh",
         "pid": "109818",
-        "party": "",
+        "party": "CDU",
         "email": "",
-        "seat": ""
+        "seat": "9-10"
     },
     {
         "name": "Angela St\u00e4hler",
         "pid": "108163",
-        "party": "",
+        "party": "CDU",
         "email": "mail@a-staehler.de",
-        "seat": ""
+        "seat": "12-12"
     },
     {
         "name": "Jolanta Vogelberg",
         "pid": "109651",
-        "party": "",
+        "party": "CDU",
         "email": "vogelberg@muenster.de",
-        "seat": ""
+        "seat": "13-12"
     },
     {
         "name": "Walter von G\u00f6wels",
         "pid": "108599",
-        "party": "",
+        "party": "CDU",
         "email": "",
-        "seat": ""
+        "seat": "7-12"
     },
     {
         "name": "Stefan Weber",
         "pid": "6974",
-        "party": "",
+        "party": "CDU",
         "email": "",
-        "seat": ""
+        "seat": "10-12"
     },
     {
         "name": "Peter Wolfgarten",
         "pid": "108164",
-        "party": "",
+        "party": "CDU",
         "email": "pewoga@gmx.de",
-        "seat": ""
+        "seat": "7-10"
     },
     {
         "name": "Andrea Blome",
@@ -380,23 +380,23 @@
     {
         "name": "J\u00f6rg Berens",
         "pid": "109347",
-        "party": "",
+        "party": "FDP",
         "email": "berens@fdp-ms.de",
-        "seat": ""
+        "seat": "16-10"
     },
     {
         "name": "Heinrich G\u00f6tting",
         "pid": "20",
-        "party": "",
+        "party": "FDP",
         "email": "",
-        "seat": ""
+        "seat": "14-10"
     },
     {
         "name": "Bernd Mayweg",
         "pid": "7404",
-        "party": "",
+        "party": "FDP",
         "email": "bernd.mayweg@web.de",
-        "seat": ""
+        "seat": "15-10"
     },
     {
         "name": "Katharina Geuking",
@@ -464,8 +464,109 @@
     {
         "name": "Markus Lewe",
         "pid": "7040",
-        "party": "",
+        "party": "CDU",
         "email": "",
-        "seat": ""
+        "seat": "18-7"
+    },
+    {
+        "name": "Robin Denstorff",
+        "pid": "110074",
+        "party": "STADT",
+        "position": "Stadtbaurat",
+        "email": "",
+        "seat": "18-2"
+    },
+    {
+        "name": "Cornelia Wilkens",
+        "pid": "109838",
+        "photo_url": "https://www.stadt-muenster.de/fileadmin/user_upload/stadt-muenster/rathaus/pics/sonstiges/dez_wilkens.jpg",
+        "photo_source": "Homepage der Stadt Münster",
+        "photo_link": "https://www.stadt-muenster.de/verwaltungsleitung/dezernat-5.html",
+        "photo_link_date": "2021-12-12",
+        "party": "STADT",
+        "position": "Dezernentin für Soziales und Kultur",
+        "email": "",
+        "seat": "18-3"
+    },
+    {
+        "name": "Wolfgang Heuer",
+        "pid": "7106",
+        "party": "STADT",
+        "position": "Dezernat für Bürgerservice, Personal, Organisation, Ordnung, Brandschutz und IT",
+        "email": "",
+        "seat": "18-4"
+    },
+    {
+        "name": "Thomas Paal",
+        "pid": "108683",
+        "party": "STADT",
+        "position": "Dezernat für Bürgerservice, Personal, Organisation, Ordnung, Brandschutz und IT",
+        "email": "",
+        "seat": "18-8"
+    },
+    {
+        "name": "Matthias Peck",
+        "pid": "109839",
+        "photo_url": "https://www.stadt-muenster.de/fileadmin/user_upload/stadt-muenster/rathaus/pics/sonstiges/dez_peck.jpg",
+        "photo_source": "Homepage der Stadt Münster",
+        "photo_link": "https://www.stadt-muenster.de/verwaltungsleitung/dezernat-6.html",
+        "photo_link_date": "2021-12-12",
+        "party": "STADT",
+        "position": "Dezernat für Wohnungsversorgung, Immobilien und Nachhaltigkeit",
+        "email": "",
+        "seat": "18-11"
+    },
+    {
+        "name": "Christine Zeller",
+        "pid": "110492",
+        "photo_url": "https://www.stadt-muenster.de/fileadmin/user_upload/stadt-muenster/rathaus/pics/sonstiges/dez_zeller.jpg",
+        "photo_source": "Homepage der Stadt Münster",
+        "photo_link": "https://www.stadt-muenster.de/verwaltungsleitung/dezernat-2.html",
+        "photo_link_date": "2021-12-12",
+        "party": "STADT",
+        "position": "Dezernat für Finanzen, Beteiligungen und Migration",
+        "email": "",
+        "seat": "18-10"
+    },
+    {
+        "name": "Jürgen Kupferschmidt",
+        "pid": "107439",
+        "party": "STADT",
+        "position": "Dezernat für Bildung, Jugend, Familie und Sport ",
+        "email": "",
+        "seat": "18-6"
+    },
+    {
+        "name": "Integrations Rat",
+        "seat": "0-1"
+    },
+    {
+        "name": "BV",
+        "seat": "0-2"
+    },
+    {
+        "name": "BV",
+        "seat": "0-3"
+    },
+    {
+        "name": "BV",
+        "seat": "0-4"
+    },
+    {
+        "name": "BV",
+        "seat": "0-5"
+    },
+    {
+        "name": "BV",
+        "seat": "0-6"
+    },
+    {
+        "name": "BV",
+        "seat": "0-7"
+    },
+    {
+        "name": "Bürgermikro",
+        "seat": "0-9"
     }
+
 ]
