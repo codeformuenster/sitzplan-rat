@@ -7,6 +7,7 @@ import requests
 import os.path
 
 from datetime import datetime, timedelta
+from jinja2 import FileSystemLoader, Environment
 
 # Basic logger configuration
 logging.basicConfig(level=logging.DEBUG, format='<%(asctime)s %(levelname)s> %(message)s')
@@ -22,6 +23,7 @@ with open('config-core.json') as f:
     config = json.load(f)
 
 print(config)
+
 
 def getMembers(oparlMembers):
 
@@ -83,6 +85,16 @@ def getMembers(oparlMembers):
     with open(CONFIG_MEMBERS, 'w') as outfile:
         json.dump(members, outfile)
 
+
+def renderJinjaTemplate(directory, template_name, **kwargs):
+    # Use Jinja2 Template engine for HTML generation
+    # Source: https://daniel.feldroy.com/posts/jinja2-quick-load-function
+    loader = FileSystemLoader(directory)
+    env = Environment(loader=loader)
+    template = env.get_template(template_name)
+    return template.render(**kwargs)
+
+
 def writeSitzplanHtml():
 
     # Read seats config
@@ -97,72 +109,16 @@ def writeSitzplanHtml():
     sitzplanRows = config.get('roomLayout').get('rows')
     sitzplanCols = config.get('roomLayout').get('columns')
 
-    html = '''<!doctype html><html lang="de">
-        <meta charset="utf-8">
-        <style>
-            div {{width:{}%;height:70px;border:2x solid #eee}}
-            div.row {{width:100%;border: 1px solid #fefefe;clear: left;}}
-            div.row > div {{float:left}}
-            .occ {{
-                background-color:#ddd;
-                overflow:hidden;
-                border: 1px solid black;
-                cursor: pointer;
-                border-radius: 7px;
-                margin: 0 1px 0 0;
-                background-size: 50px;
-                background-repeat: no-repeat;
-                background-position: 0px center;
-            }}
-            div.occ span {{
-                margin: 4px 4px 0 50px;
-                display: inline-block;
-                font-size: 10pt;
-                overflow-wrap:break-word;
-            }}
-            .p-GRÜNE {{background-color:#64a12d}}
-            .p-LINKE {{background-color:#f39}}
-            .p-VOLT {{background-color:#502379;color:white}}
-            .p-ÖDP {{background-color:#ff6400}}
-            .p-AFD {{background-color:#09f}}
-            .p-CDU {{background-color:#000;color:white}}
-            .p-SPD {{background-color:#E3000F}}
-            .p-FDP {{background-color:#ffdd00}}
-            .p-OHNE {{background-color:#aaa;}}
-            #member img {{
-                max-width:150px;
-                max-height:200px;
-             }}
-            #member {{
-                display:none;
-                position:absolute;
-                overflow:hidden;
-                background-color:yellow;
-                border: 1px solid black;
-                border-radius: 5px;
-                width: 200px;
-                text-align: center;
-                height: 260px;
-            }}
-            #member span {{
-                background-color: orange;
-                display: block;
-                padding: 4px 0;
-            }}
-        </style>
-        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-        <body>
-        '''.format(7)
-
+    sitzplan = ""
     for row in range(sitzplanRows):
-        html = html + '<div class="row">'
+        sitzplan = sitzplan + '<div class="row">'
         for column in range(sitzplanCols):
             seatId = '{}-{}'.format(row,column)
             personData = {}
             if seatId in seats:
                 personData = seats[seatId]
                 pName = personData.get('name')
-                html = html + '<div data-id="{}" data-party="{}" class="occ p-{}" style="{}"><span class="name">{}</span></div>'.format(
+                sitzplan = sitzplan + '<div data-id="{}" data-party="{}" class="occ p-{}" style="{}"><span class="name">{}</span></div>'.format(
                     personData.get('pid'),
                     personData.get('party'),
                     personData.get('party'),
@@ -170,47 +126,18 @@ def writeSitzplanHtml():
                     pName if pName else ''
                     )
             else:
-                html = html + '<div></div>'
-        html = html + '</div>'
+                sitzplan = sitzplan + '<div></div>'
+        sitzplan = sitzplan + '</div>'
 
-    html = html + '''
-        <div id="member">
-            <span class="name">Name</span>
-            <span class="party">Partei</span>
-            <img class="photo" src="url" />
-        </div>
-        <script>
-            var errCount = 0;
-            $("#member .photo").on('error', function(e) {
-                event.stopPropagation();
-                if (errCount++ <= 1) {
-                    $("#member .photo").attr("src", "img/person.png");
-                }
-            });
-            $("div.occ").click(function(event){
-                const pid = $(this).data("id");
-                location.href="https://www.stadt-muenster.de/sessionnet/sessionnetbi/pe0051.php?__kpenr="+pid;
-            }).hover(function(event) {
-                errCount = 0;
-                const pid = $(this).data("id");
-                const name = $(this).find(".name").text();
-                const party = $(this).data("party");
-                const photoUrl = 'https://www.stadt-muenster.de/sessionnet/sessionnetbi/im/pe'+pid+'.jpg'
-                console.log("id", pid);
-                $("#member .name").html(name);
-                $("#member .party").html(party);
-                $("#member .photo").attr("src", photoUrl);
-                const maxHeight = $(document).height()-300
-                const maxWidth = $(document).width()-220
-                const ypos = (event.pageY > maxHeight) ? maxHeight : event.pageY;
-                const xpos = (event.pageX > maxWidth) ? maxWidth : event.pageX;
-                $("#member").css({top: ypos, left: xpos}).show();
-            }, function() {
-                $("#member").hide();
-            });
-        </script>
-        </body></html>
-        '''
+    templateData = {
+        "TITLE": config.get('info').get('title'),
+        "DATE": config.get('info').get('date'),
+        "DISCLAIMER": config.get('info').get('disclaimer'),
+        "IMPRINT": config.get('info').get('imprint'),
+        "LOGO": config.get('info').get('logo'),
+        "SITZPLAN": sitzplan
+    }
+    html = renderJinjaTemplate("template", "main.jinja2", **templateData)
 
     with open('sitzplan.html', 'w') as outfile:
         outfile.write(html)
@@ -221,7 +148,7 @@ if os.path.isfile(CONFIG_MEMBERS):
     print("Members config file exists.")
 else:
     # Read Gremiuem (Rat)
-    gremiumUrl = config.get('core').get('baseurl')
+    gremiumUrl = config.get('oparl').get('baseurl')
     LOGGER.debug("Base URL: %s", gremiumUrl)
 
     r = requests.get(gremiumUrl)
