@@ -5,7 +5,7 @@
 How does it work?
 
 * The script `generateSitzplan.py` will read all board members of a committee via OParl API interface and then write the member list to the file `config-members.json`, if the file does not exist.
-* If the file exists, then it will read the seating information from the field `seat` of every member and then render the committee seating plan to the file `sitzplan.html`
+* If the file exists, then it will read the seating information from the field `seat` of every member and then render the committee seating plan to the file `index.html`
 
 ## Usage
 
@@ -17,7 +17,7 @@ How does it work?
     # Now you can open the file `config-members.json`
     # and fill out all the seating information in the fields `seat`.
 
-    # Step 3: Run generateSitzplan.py again to generate the sitzplan.html
+    # Step 3: Run generateSitzplan.py again to generate the index.html
     python3 generateSitzplan.py
 
 ```
