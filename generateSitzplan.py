@@ -139,7 +139,7 @@ def writeSitzplanHtml():
     }
     html = renderJinjaTemplate("template", "main.jinja2", **templateData)
 
-    with open('sitzplan.html', 'w') as outfile:
+    with open('index.html', 'w') as outfile:
         outfile.write(html)
 
     print(html)
