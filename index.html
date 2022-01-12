@@ -107,6 +107,7 @@
         <div class="overlay">
             <p> Die auf dieser Webseite genutzten Informationen stammen aus der <a href="https://opendata.stadt-muenster.de/blog/ein-schritt-zu-transparenterer-gremienarbeit-oparl">offenen Datenschnittstelle 'OParl' des Ratsinformationssystem der Stadt Münster</a> sowie <a href="https://opendata.stadt-muenster.de/tags/politik-und-wahlen">aus dem Open-Data-Portal der Stadtverwaltung Münster</a>. Alle Daten werden entsprechend der Nutzungsbedingungen des Open-Data-Portals genutzt im Rahmen der Lizenz "Datenlizenz Deutschland - Namensnennung - Version 2.0" mit Quellangabe: Stadt Münster. Die Fotos der Gremienmitglieder werden <a href="https://www.stadt-muenster.de/sessionnet/sessionnetbi/pe0051.php?__kpenr=7040">direkt von der öffentlichen Webseite des Ratsinformationssystems eingebunden</a>.<br />Idee und Umsetzung: Jörg Rosteck, Gerald Pape, Thomas Werner </p>
             <p><a href="https://www.codeformuenster.org"><img class="logo" src="https://codeformuenster.org/assets/img/navbar_logo.svg" /></a></p>
+            <p>Kontakt: <br /><img height="18" src="contact-white2.png" /></p>
             <p><a href="https://codeformuenster.org/impressum/">[Impressum &amp; Datenschutz]</a></p>
         </div>
     </footer>
@@ -146,5 +147,22 @@
             $("#member").hide();
         });
     </script>
+
+    <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
+    <script>
+    (function(f, a, t, h, o, m){
+        a[h]=a[h]||function(){
+            (a[h].q=a[h].q||[]).push(arguments)
+        };
+        o=f.createElement('script'),
+        m=f.getElementsByTagName('script')[0];
+        o.async=1; o.src=t; o.id='fathom-script';
+        m.parentNode.insertBefore(o,m)
+    })(document, window, '//tomo.input23.de/tracker.js', 'fathom');
+    fathom('set', 'siteId', 'YULVR');
+    fathom('trackPageview');
+    </script>
+    <!-- / Fathom -->
+
 </body>
 </html>
