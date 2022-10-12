@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="de">
+
 <head>
     <meta charset="utf-8" />
     <style>
@@ -8,12 +9,25 @@
             src: url(img/RobotoCondensed-Regular.ttf);
         }
 
-        div {width:7%;height:70px;border:2x solid #eee}
-        div.row {width:100%;border: 1px solid #fefefe;clear: left;}
-        div.row > div {float:left}
+        div {
+            width: 7%;
+            height: 70px;
+            border: 2x solid #eee
+        }
+
+        div.row {
+            width: 100%;
+            border: 1px solid #fefefe;
+            clear: left;
+        }
+
+        div.row>div {
+            float: left
+        }
+
         .occ {
-            background-color:#ddd;
-            overflow:hidden;
+            background-color: #ddd;
+            overflow: hidden;
             border: 1px solid black;
             cursor: pointer;
             border-radius: 7px;
@@ -22,69 +36,144 @@
             background-repeat: no-repeat;
             background-position: 0px center;
         }
+
         div.occ span {
             margin: 4px 4px 0 50px;
             display: inline-block;
             font-size: 10pt;
-            overflow-wrap:break-word;
-            padding-left:1px;
+            overflow-wrap: break-word;
+            padding-left: 1px;
             font-family: RobotoCondensed;
         }
-        .p-GRÜNE {background-color:#64a12d}
-        .p-LINKE {background-color:#f39}
-        .p-VOLT {background-color:#502379;color:white}
-        .p-ÖDP {background-color:#ff6400}
-        .p-AFD {background-color:#09f}
-        .p-CDU {background-color:#000;color:white}
-        .p-SPD {background-color:#E3000F}
-        .p-FDP {background-color:#ffdd00}
-        .p-OHNE {background-color:#aaa;}
+
+        .p-GRÜNE {
+            background-color: #64a12d
+        }
+
+        .p-LINKE {
+            background-color: #f39
+        }
+
+        .p-PARTEI {
+            background-color: #B92837
+        }
+
+        .p-VOLT {
+            background-color: #502379;
+            color: white
+        }
+
+        .p-ÖDP {
+            background-color: #ff6400
+        }
+
+        .p-AFD {
+            background-color: #09f
+        }
+
+        .p-CDU {
+            background-color: #000;
+            color: white
+        }
+
+        .p-SPD {
+            background-color: #E3000F
+        }
+
+        .p-FDP {
+            background-color: #ffdd00
+        }
+
+        .p-OHNE {
+            background-color: #aaa;
+        }
+
         #member img {
-            max-width:150px;
-            max-height:200px;
-            }
+            max-width: 150px;
+            max-height: 200px;
+        }
+
         #member {
-            display:none;
-            position:absolute;
-            overflow:hidden;
-            background-color:yellow;
+            display: none;
+            position: absolute;
+            overflow: hidden;
+            background-color: yellow;
             border: 1px solid black;
             border-radius: 5px;
             width: 200px;
             text-align: center;
             height: 260px;
         }
+
         #member span {
             background-color: orange;
             display: block;
             padding: 4px 0;
         }
-        *{padding: 0; margin: 0; box-sizing: border-box;}
 
-        a, a:hover, a:active {color:#ddd;}
-        footer, header {
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        a,
+        a:hover,
+        a:active {
+            color: #ddd;
+        }
+
+        a.nav {
+            display: inline-block;
+            margin-right: 10px
+        }
+
+        footer,
+        header {
             text-align: center;
             width: 100%;
             height: auto;
-            background-image: linear-gradient(to right, #283048 0%, #000  100%);
+            background-image: linear-gradient(to right, #283048 0%, #000 100%);
             position: relative;
             overflow: hidden;
         }
-        footer p, header p {
+
+        footer p,
+        header p {
             font-family: RobotoCondensed;
         }
-        footer p {margin:15px 0 25px 0;display:block}
-        footer {padding:30px 0}
-        footer .overlay, header .overlay{
+
+        footer p {
+            margin: 15px 0 25px 0;
+            display: block
+        }
+
+        footer {
+            padding: 30px 0
+        }
+
+        footer .overlay,
+        header .overlay {
             width: 100%;
-            max-width:1200px;
+            max-width: 1200px;
             margin: 0 auto;
             height: 100%;
             padding: 10px;
             color: #FFF;
             text-shadow: 1px 1px 1px #333;
         }
-        header {margin-bottom:30px;padding-bottom:10px}
+
+        header {
+            margin-bottom: 30px;
+            padding-bottom: 10px
+        }
+
+        span.subtitle {
+            font-weight: bold;
+            display: inline-block;
+            margin-right: 20px;
+        }
+
         h1 {
             font-size: 50px;
             margin-bottom: 0px;
@@ -92,15 +181,20 @@
     </style>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
+
 <body>
     <header>
         <div class="overlay">
             <h1>{{ TITLE }}</h1>
-            <p> Stand: {{ DATE }}</p>
+            <p>
+                Stand: <span class="subtitle">{{ SUBTITLE }}</span>
+                <span class="nav"> Auswahl: {{ NAV_LINKS }}</span>
+            </p>
         </div>
     </header>
 
     {{ SITZPLAN }}
+
 
 
     <footer>
@@ -119,50 +213,51 @@
     </div>
     <script>
         var errCount = 0;
-        $("#member .photo").on('error', function(e) {
+        $("#member .photo").on('error', function (e) {
             event.stopPropagation();
             if (errCount++ <= 1) {
                 $("#member .photo").attr("src", "img/person.png");
             }
         });
-        $("div.occ").click(function(event){
+        $("div.occ").click(function (event) {
             const pid = $(this).data("id");
-            location.href="https://www.stadt-muenster.de/sessionnet/sessionnetbi/pe0051.php?__kpenr="+pid;
-        }).hover(function(event) {
+            location.href = "https://www.stadt-muenster.de/sessionnet/sessionnetbi/pe0051.php?__kpenr=" + pid;
+        }).hover(function (event) {
             errCount = 0;
             const pid = $(this).data("id");
             const name = $(this).find(".name").text();
             const party = $(this).data("party");
-            const photoUrl = 'https://www.stadt-muenster.de/sessionnet/sessionnetbi/im/pe'+pid+'.jpg'
+            const photoUrl = 'https://www.stadt-muenster.de/sessionnet/sessionnetbi/im/pe' + pid + '.jpg'
             console.log("id", pid);
             $("#member .name").html(name);
             $("#member .party").html(party);
             $("#member .photo").attr("src", photoUrl);
-            const maxHeight = $(document).height()-300
-            const maxWidth = $(document).width()-220
+            const maxHeight = $(document).height() - 300
+            const maxWidth = $(document).width() - 220
             const ypos = (event.pageY > maxHeight) ? maxHeight : event.pageY;
             const xpos = (event.pageX > maxWidth) ? maxWidth : event.pageX;
-            $("#member").css({top: ypos, left: xpos}).show();
-        }, function() {
+            $("#member").css({ top: ypos, left: xpos }).show();
+        }, function () {
             $("#member").hide();
         });
     </script>
 
     <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
     <script>
-    (function(f, a, t, h, o, m){
-        a[h]=a[h]||function(){
-            (a[h].q=a[h].q||[]).push(arguments)
-        };
-        o=f.createElement('script'),
-        m=f.getElementsByTagName('script')[0];
-        o.async=1; o.src=t; o.id='fathom-script';
-        m.parentNode.insertBefore(o,m)
-    })(document, window, '//tomo.input23.de/tracker.js', 'fathom');
-    fathom('set', 'siteId', 'YULVR');
-    fathom('trackPageview');
+        (function (f, a, t, h, o, m) {
+            a[h] = a[h] || function () {
+                (a[h].q = a[h].q || []).push(arguments)
+            };
+            o = f.createElement('script'),
+                m = f.getElementsByTagName('script')[0];
+            o.async = 1; o.src = t; o.id = 'fathom-script';
+            m.parentNode.insertBefore(o, m)
+        })(document, window, '//tomo.input23.de/tracker.js', 'fathom');
+        fathom('set', 'siteId', 'YULVR');
+        fathom('trackPageview');
     </script>
     <!-- / Fathom -->
 
 </body>
+
 </html>
