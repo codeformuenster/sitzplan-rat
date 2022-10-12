@@ -8,7 +8,6 @@ import os.path
 
 from datetime import datetime, timedelta
 from jinja2 import FileSystemLoader, Environment
-from sympy import true
 
 # Basic logger configuration
 logging.basicConfig(
