@@ -203,8 +203,8 @@
     "seat": "2-3"
   },
   {
-    "name": "Dr. Annika Bürger",
-    "pid": "110108",
+    "name": "Jule Heinz-Fischer",
+    "pid": "110579",
     "party": "GR\u00dcNE",
     "email": "",
     "seat": "8-5"
@@ -452,14 +452,14 @@
     "pid": "110585",
     "party": "VOLT",
     "email": "helene.goldbeck@volteuropa.org",
-    "seat": "2-5"
+    "seat": "2-4"
   },
   {
-    "name": "Martin Grewer",
-    "pid": "110635",
+    "name": "Tim Pasch",
+    "pid": "110584",
     "party": "VOLT",
-    "email": "martin.grewer@volteuropa.org",
-    "seat": "2-4"
+    "email": "tim.pasch@volteuropa.org",
+    "seat": "2-5"
   },
   {
     "name": "Richard Mol",
@@ -512,12 +512,12 @@
     "seat": "15-9"
   },
   {
-    "name": "Arno Minas",
-    "pid": "112367",
-    "photo_url": "https://www.presse-service.de/data.aspx/medien/262965V.jpg",
-    "photo_source": "Pressemeldung der Stadt Münster",
-    "photo_link": "https://www.muenster.de/pressemeldungen/web/frontend/output/standard/design/standard/page/1/show/1131312",
-    "photo_link_date": "2023-06-14",
+    "name": "Matthias Peck",
+    "pid": "109839",
+    "photo_url": "https://www.stadt-muenster.de/fileadmin/user_upload/stadt-muenster/rathaus/pics/sonstiges/dez_peck.jpg",
+    "photo_source": "Homepage der Stadt Münster",
+    "photo_link": "https://www.stadt-muenster.de/verwaltungsleitung/dezernat-6.html",
+    "photo_link_date": "2021-12-12",
     "party": "STADT",
     "position": "Dezernat für Wohnungsversorgung, Immobilien und Nachhaltigkeit",
     "email": "",

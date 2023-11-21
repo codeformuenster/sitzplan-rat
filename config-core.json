@@ -11,6 +11,13 @@
     "files": [
         {
             "file": "config-members.json",
+            "date": "November 2023",
+            "room": "Stadtweinhaus",
+            "rows": 19,
+            "columns": 13
+        },
+        {
+            "file": "config-members-2022-10.json",
             "date": "September 2022",
             "room": "Stadtweinhaus",
             "rows": 19,
