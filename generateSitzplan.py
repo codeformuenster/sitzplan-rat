@@ -151,16 +151,20 @@ def writeSitzplanHtml(seatingConfig):
             personData = {}
             if seatId in seats:
                 personData = seats[seatId]
+                imageUrl = "https://www.stadt-muenster.de/sessionnet/sessionnetbi/im/pe{}.jpg".format(personData.get("pid"))
+                imageAlt = personData.get("photo_url")
+                if imageAlt:
+                    LOGGER.info("Found alt image: '%s' ", imageAlt)
+                    imageUrl = imageAlt
                 pName = personData.get("name")
                 sitzplan = (
                     sitzplan
-                    + '<div data-id="{}" data-party="{}" class="occ p-{}" style="{}"><span class="name">{}</span></div>'.format(
+                    + '<div data-id="{}" data-party="{}" data-photo="{}" class="occ p-{}" style="{}"><span class="name">{}</span></div>'.format(
                         personData.get("pid"),
                         personData.get("party"),
+                        imageUrl,
                         personData.get("party"),
-                        "background-image: url(https://www.stadt-muenster.de/sessionnet/sessionnetbi/im/pe{}.jpg);".format(
-                            personData.get("pid")
-                        ),
+                        "background-image: url({});".format(imageUrl),
                         pName if pName else "",
                     )
                 )
@@ -182,7 +186,7 @@ def writeSitzplanHtml(seatingConfig):
     with open(getHtmlFilename(filename), "w") as outfile:
         outfile.write(html)
 
-    print(html)
+    # print(html)
 
 
 if os.path.isfile(DEFAULT_CONFIG_MEMBERS):

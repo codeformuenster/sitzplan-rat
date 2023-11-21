@@ -227,7 +227,7 @@
             const pid = $(this).data("id");
             const name = $(this).find(".name").text();
             const party = $(this).data("party");
-            const photoUrl = 'https://www.stadt-muenster.de/sessionnet/sessionnetbi/im/pe' + pid + '.jpg'
+            const photoUrl = $(this).data("photo");
             console.log("id", pid);
             $("#member .name").html(name);
             $("#member .party").html(party);
