@@ -102,13 +102,20 @@
             border-radius: 5px;
             width: 200px;
             text-align: center;
-            height: 260px;
+            height: 300px;
         }
 
         #member span {
             background-color: orange;
             display: block;
             padding: 4px 0;
+        }
+        #member i, #member i a, #member i.psrc, #member i.psrc a {
+            font-size:8px;
+            color:black!important;
+            line-height:9px;
+            font-style: normal;
+            display:inline-block;
         }
 
         * {
@@ -210,6 +217,7 @@
         <span class="name">Name</span>
         <span class="party">Partei</span>
         <img class="photo" src="url" />
+        <i class="psrc"></i>
     </div>
     <script>
         var errCount = 0;
@@ -228,11 +236,16 @@
             const name = $(this).find(".name").text();
             const party = $(this).data("party");
             const photoUrl = $(this).data("photo");
+            var photoCopyright = $(this).data("psrc");
+            if (photoCopyright) {
+                photoCopyright = "Bildquelle: " + photoCopyright;
+            }
             console.log("id", pid);
             $("#member .name").html(name);
             $("#member .party").html(party);
             $("#member .photo").attr("src", photoUrl);
-            const maxHeight = $(document).height() - 300
+            $("#member .psrc").html(photoCopyright)
+            const maxHeight = $(document).height() - 350
             const maxWidth = $(document).width() - 220
             const ypos = (event.pageY > maxHeight) ? maxHeight : event.pageY;
             const xpos = (event.pageX > maxWidth) ? maxWidth : event.pageX;

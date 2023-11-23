@@ -153,20 +153,27 @@ def writeSitzplanHtml(seatingConfig):
                 personData = seats[seatId]
                 imageUrl = "https://www.stadt-muenster.de/sessionnet/sessionnetbi/im/pe{}.jpg".format(personData.get("pid"))
                 imageAlt = personData.get("photo_url")
+                photoSource = ""
                 if imageAlt:
                     LOGGER.info("Found alt image: '%s' ", imageAlt)
                     imageUrl = imageAlt
+                    photoSource = '{} ({} am {})</a>'.format(
+                        personData.get("photo_source"),
+                        personData.get("photo_link"),
+                        personData.get("photo_link_date")
+                    )
                 pName = personData.get("name")
                 sitzplan = (
                     sitzplan
-                    + '<div data-id="{}" data-party="{}" data-photo="{}" class="occ p-{}" style="{}"><span class="name">{}</span></div>'.format(
+                    + '<div data-id="{}" data-psrc="{}" data-party="{}" data-photo="{}" class="occ p-{}" style="{}"><span class="name">{}</span></div>'.format(
                         personData.get("pid"),
+                        photoSource,
                         personData.get("party"),
                         imageUrl,
                         personData.get("party"),
                         "background-image: url({});".format(imageUrl),
                         pName if pName else "",
-                    )
+                    ) + "\n"
                 )
             else:
                 sitzplan = sitzplan + "<div></div>"

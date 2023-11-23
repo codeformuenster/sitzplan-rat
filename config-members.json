@@ -478,8 +478,12 @@
   {
     "name": "Robin Denstorff",
     "pid": "110074",
+    "photo_url": "https://www.stadt-muenster.de/fileadmin/user_upload/stadt-muenster/rathaus/pics/sonstiges/dez_denstorff2022.jpg",
+    "photo_source": "Homepage der Stadt Münster",
+    "photo_link": "https://www.stadt-muenster.de/verwaltungsleitung/dezernat-3",
+    "photo_link_date": "2023-11-23",
     "party": "STADT",
-    "position": "Stadtbaurat",
+    "position": "Stadtbaurat (Dezernat für Planung, Bau und Wirtschaft)",
     "email": "",
     "seat": "15-2"
   },
@@ -499,7 +503,7 @@
     "name": "Wolfgang Heuer",
     "pid": "7106",
     "party": "STADT",
-    "position": "Dezernat für Bürgerservice, Personal, Organisation, Ordnung, Brandschutz und IT",
+    "position": "Dezernat für Personal, Organisation, Ordnung, Feuerwehr und IT",
     "email": "",
     "seat": "15-4"
   },
@@ -507,17 +511,17 @@
     "name": "Thomas Paal",
     "pid": "108683",
     "party": "STADT",
-    "position": "Dezernat für Bürgerservice, Personal, Organisation, Ordnung, Brandschutz und IT",
+    "position": "Dezernat für Bildung, Jugend, Familie und Sport",
     "email": "",
     "seat": "15-9"
   },
   {
     "name": "Arno Minas",
     "pid": "112367",
-    "photo_url": "https://www.presse-service.de/data.aspx/medien/262965V.jpg",
-    "photo_source": "Pressemeldung der Stadt Münster",
-    "photo_link": "https://www.muenster.de/pressemeldungen/web/frontend/output/standard/design/standard/page/1/show/1131312",
-    "photo_link_date": "2023-06-14",
+    "photo_url": "https://www.stadt-muenster.de/fileadmin/user_upload/stadt-muenster/00_rathaus/pics/minas_arno.jpg",
+    "photo_source": "Homepage der Stadt Münster",
+    "photo_link": "https://www.stadt-muenster.de/verwaltungsleitung/dezernat-6",
+    "photo_link_date": "2023-11-23",
     "party": "STADT",
     "position": "Dezernat für Wohnungsversorgung, Immobilien und Nachhaltigkeit",
     "email": "",
@@ -531,7 +535,7 @@
     "photo_link": "https://www.stadt-muenster.de/verwaltungsleitung/dezernat-2.html",
     "photo_link_date": "2021-12-12",
     "party": "STADT",
-    "position": "Dezernat für Finanzen, Beteiligungen und Migration",
+    "position": "Dezernat für Finanzen, Beteiligungen und Integration",
     "email": "",
     "seat": "15-10"
   },
@@ -539,7 +543,7 @@
     "name": "Jürgen Kupferschmidt",
     "pid": "107439",
     "party": "STADT",
-    "position": "Dezernat für Bildung, Jugend, Familie und Sport ",
+    "position": "Leiter des Amtes für Bürger- und Ratsservice",
     "email": "",
     "seat": "15-6"
   },
