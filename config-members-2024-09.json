@@ -200,7 +200,7 @@
     "pid": "110108",
     "party": "GR\u00dcNE",
     "email": "buerger@gruene-muenster.de",
-    "seat": "8-1"
+    "seat": "8-5"
   },
   {
     "name": "Leon Herbstmann",
@@ -270,7 +270,7 @@
     "pid": "107955",
     "party": "GR\u00dcNE",
     "email": "specht.achim@t-online.de",
-    "seat": "8-5"
+    "seat": "8-1"
   },
   {
     "name": "Prof. Dr. Rita Stein-Redent",
@@ -314,6 +314,7 @@
     "email": "",
     "seat": "13-3"
   },
+  
   {
     "name": "Doris Feldmann",
     "pid": "109588",
@@ -408,17 +409,17 @@
     "seat": "4-7"
   },
   {
-    "name": "Heiko Wischnewski",
-    "pid": "109433",
+    "name": "Ortrud Philipp",
+    "pid": "108986",
     "party": "LINKE",
-    "email": "",
+    "email": "philipp@linksfraktion-muenster.de",
     "seat": "4-8"
   },
   {
-    "name": "Fatma Karana",
-    "pid": "109487",
+    "name": "Ulrich Thoden",
+    "pid": "109653",
     "party": "LINKE",
-    "email": "",
+    "email": "uthoden@web.de",
     "seat": "4-9"
   },
   {
@@ -461,7 +462,7 @@
     "pid": "109566",
     "party": "AFD",
     "email": "NEOCORTEX999@web.de",
-    "seat": "2-11"
+    "seat": "2-10"
   },
   {
     "name": "Markus Lewe",

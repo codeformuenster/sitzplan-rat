@@ -11,6 +11,20 @@
     "files": [
         {
             "file": "config-members.json",
+            "date": "Januar 2025",
+            "room": "Stadtweinhaus",
+            "rows": 19,
+            "columns": 13
+        },
+        {
+            "file": "config-members-2024-09.json",
+            "date": "September 2024",
+            "room": "Stadtweinhaus",
+            "rows": 19,
+            "columns": 13
+        },
+        {
+            "file": "config-members-2023-11.json",
             "date": "November 2023",
             "room": "Stadtweinhaus",
             "rows": 19,
@@ -23,6 +37,7 @@
             "rows": 19,
             "columns": 13
         },
+
         {
             "file": "config-members-202109.json",
             "date": "November 2021",

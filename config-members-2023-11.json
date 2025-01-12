@@ -28,7 +28,7 @@
     "seat": "11-10"
   },
   {
-    "name": "Dr. Dietmar Erber",
+    "name": "Dietmar Erber",
     "pid": "6965",
     "party": "CDU",
     "email": "",
@@ -70,7 +70,7 @@
     "seat": "9-8"
   },
   {
-    "name": "Dr. Michael Klenner",
+    "name": "Michael Klenner",
     "pid": "108148",
     "party": "CDU",
     "email": "",
@@ -175,6 +175,13 @@
     "seat": "6-1"
   },
   {
+    "name": "Annika B\u00fcrger",
+    "pid": "110108",
+    "party": "GR\u00dcNE",
+    "email": "buerger@gruene-muenster.de",
+    "seat": "9-3"
+  },
+  {
     "name": "Dr. Petra Dieckmann",
     "pid": "109006",
     "party": "GR\u00dcNE",
@@ -193,14 +200,14 @@
     "pid": "110543",
     "party": "GR\u00dcNE",
     "email": "herbermann@gruene-muenster.de",
-    "seat": "2-2"
+    "seat": "2-3"
   },
   {
     "name": "Dr. Annika Bürger",
     "pid": "110108",
     "party": "GR\u00dcNE",
-    "email": "buerger@gruene-muenster.de",
-    "seat": "8-1"
+    "email": "",
+    "seat": "8-5"
   },
   {
     "name": "Leon Herbstmann",
@@ -270,7 +277,7 @@
     "pid": "107955",
     "party": "GR\u00dcNE",
     "email": "specht.achim@t-online.de",
-    "seat": "8-5"
+    "seat": "8-1"
   },
   {
     "name": "Prof. Dr. Rita Stein-Redent",
@@ -289,9 +296,9 @@
   {
     "name": "Damian Winter",
     "pid": "110703",
-    "party": "GR\u00dcNE",
-    "email": "winter@gruene-muenster.de",
-    "seat": "9-3"
+    "party": "",
+    "email": "damian.winter@posteo.de",
+    "seat": ""
   },
   {
     "name": "Harald W\u00f6lter",
@@ -303,13 +310,6 @@
   {
     "name": "Sandra Beer",
     "pid": "110578",
-    "party": "SPD",
-    "email": "",
-    "seat": "12-3"
-  },
-  {
-    "name": "Dr. Tanja Andor",
-    "pid": "110381",
     "party": "SPD",
     "email": "",
     "seat": "13-3"
@@ -326,21 +326,27 @@
     "pid": "109655",
     "party": "SPD",
     "email": "matthias.glomb@spd-muenster.de",
-    "seat": "10-3"
+    "seat": "12-3"
   },
-  {
-    "name": "Noah Börnhorst",
-    "pid": "109960",
-    "party": "SPD",
-    "email": "noah.boernhorst@spd-muenster.de",
-    "seat": "11-3"
-  },
-
   {
     "name": "Philipp Hagemann",
     "pid": "108170",
     "party": "SPD",
-    "email": "philipp.hagemann@spd-muenster.de",
+    "email": "",
+    "seat": "11-3"
+  },
+  {
+    "name": "Ute Hagemann",
+    "pid": "1795",
+    "party": "SPD",
+    "email": "Ute.K.Hagemann@t-online.de",
+    "seat": "10-3"
+  },
+  {
+    "name": "Marius Herwig",
+    "pid": "109503",
+    "party": "SPD",
+    "email": "marius.herwig@spd-muenster.de",
     "seat": "13-1"
   },
   {
@@ -362,16 +368,15 @@
     "pid": "108979",
     "party": "SPD",
     "email": "Liekefedt@spd-muenster.de",
-    "seat": "11-1"
-  },
-  {
-    "name": "Ute Hagemann",
-    "pid": "1795",
-    "party": "SPD",
-    "email": "",
     "seat": "12-1"
   },
-
+  {
+    "name": "Ludger Steinmann",
+    "pid": "7108",
+    "party": "SPD",
+    "email": "",
+    "seat": "11-1"
+  },
   {
     "name": "Maria Winkel",
     "pid": "108751",
@@ -408,17 +413,17 @@
     "seat": "4-7"
   },
   {
-    "name": "Heiko Wischnewski",
-    "pid": "109433",
+    "name": "Ortrud Philipp",
+    "pid": "108986",
     "party": "LINKE",
-    "email": "",
+    "email": "philipp@linksfraktion-muenster.de",
     "seat": "4-8"
   },
   {
-    "name": "Fatma Karana",
-    "pid": "109487",
+    "name": "Ulrich Thoden",
+    "pid": "109653",
     "party": "LINKE",
-    "email": "",
+    "email": "uthoden@web.de",
     "seat": "4-9"
   },
   {
@@ -447,21 +452,21 @@
     "pid": "110585",
     "party": "VOLT",
     "email": "helene.goldbeck@volteuropa.org",
-    "seat": "2-4"
+    "seat": "2-5"
   },
   {
     "name": "Martin Grewer",
     "pid": "110635",
     "party": "VOLT",
     "email": "martin.grewer@volteuropa.org",
-    "seat": "2-3"
+    "seat": "2-4"
   },
   {
     "name": "Richard Mol",
     "pid": "109566",
     "party": "AFD",
     "email": "NEOCORTEX999@web.de",
-    "seat": "2-11"
+    "seat": "2-10"
   },
   {
     "name": "Markus Lewe",
@@ -508,7 +513,7 @@
     "party": "STADT",
     "position": "Dezernat für Bildung, Jugend, Familie und Sport",
     "email": "",
-    "seat": "15-8"
+    "seat": "15-9"
   },
   {
     "name": "Arno Minas",
@@ -535,9 +540,10 @@
     "seat": "15-10"
   },
   {
-    "name": "Andreas Lembeck",
+    "name": "Jürgen Kupferschmidt",
+    "pid": "107439",
     "party": "STADT",
-    "position": "Geschäftsführung Rat und Hauptausschuss",
+    "position": "Leiter des Amtes für Bürger- und Ratsservice",
     "email": "",
     "seat": "15-6"
   },
@@ -596,6 +602,10 @@
   {
     "name": "BV",
     "seat": "0-4"
+  },
+  {
+    "name": "BV",
+    "seat": "0-5"
   },
   {
     "name": "Presse",
