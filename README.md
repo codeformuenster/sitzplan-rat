@@ -22,6 +22,21 @@ How does it work?
 
 ```
 
+## Install
+
+```bash
+# Virtuelles Environment mit dem Namen "venv" initialisieren falls noch kein venv-Unterverzeichnis da ist:
+python3 -m venv venv
+
+# Venv fürs aktuelle Projekt aktivieren
+source venv/bin/activate
+
+# Requirements installieren
+pip3 install -r requirements.txt
+
+python3 generateSitzplan.py
+```
+
 ## Local development instructions
 
 It is easier to fill out the seating information if you get "live feedback". That is why you should do the following:
