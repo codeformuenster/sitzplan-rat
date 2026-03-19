@@ -1,0 +1,576 @@
+[
+  {
+    "name": "Olaf Bloch",
+    "pid": "606",
+    "party": "CDU",
+    "seat": "15-12"
+  },
+  {
+    "name": "Meik Bruns",
+    "pid": "108066",
+    "party": "CDU",
+    "seat": "10-8"
+  },
+  {
+    "name": "Dr. Dietmar Erber",
+    "pid": "6965",
+    "party": "CDU",
+    "seat": "9-8"
+  },
+  {
+    "name": "Marcus Bielefeld",
+    "pid": "109457",
+    "party": "CDU",
+    "seat": "13-8"
+  },
+  {
+    "name": "Carmen Greefrath",
+    "pid": "6975",
+    "party": "CDU",
+    "seat": "13-10"
+  },
+  {
+    "name": "Alf Rüdiger Kaßenbrock",
+    "pid": "109582",
+    "party": "CDU",
+    "seat": "14-10"
+  },
+    {
+    "name": "Jutta Malik",
+    "pid": "110799",
+    "party": "CDU",
+    "seat": "15-10"
+  },
+  {
+    "name": "Mathias Kersting",
+    "pid": "108952",
+    "party": "CDU",
+    "seat": "11-10"
+  },
+  {
+    "name": "Dr. Britta-Antonia Riederer Freifrau von Paar zu Schönau",
+    "pid": "113780",
+    "party": "CDU",
+    "seat": "12-12"
+  },
+  {
+    "name": "Stefan Leschniok",
+    "pid": "109558",
+    "party": "CDU",
+    "seat": "9-10"
+  },
+  {
+    "name": "Babette Lichtenstein van Lengerich",
+    "pid": "109943",
+    "party": "CDU",
+    "seat": "12-8"
+  },
+  {
+    "name": "Andreas Bracht",
+    "pid": "113697",
+    "party": "CDU",
+    "seat": "11-8"
+  },
+  {
+    "name": "Martin Peitzmeier",
+    "pid": "108493",
+    "party": "CDU",
+    "seat": "13-12"
+  },
+  {
+    "name": "Angela St\u00e4hler",
+    "pid": "108163",
+    "party": "CDU",
+    "seat": "10-10"
+  },
+  {
+    "name": "Jolanta Vogelberg",
+    "pid": "109651",
+    "party": "CDU",
+    "seat": "10-12"
+  },
+  {
+    "name": "Carolin Schwarz",
+    "pid": "112566",
+    "party": "CDU",
+    "seat": "11-12"
+  },
+  {
+    "name": "Walter von G\u00f6wels",
+    "pid": "108599",
+    "party": "CDU",
+    "seat": "14-12"
+  },
+  {
+    "name": "Stefan Weber",
+    "pid": "6974",
+    "party": "CDU",
+    "seat": "12-10"
+  },
+  {
+    "name": "Peter Wolfgarten",
+    "pid": "108164",
+    "party": "CDU",
+    "seat": "8-12"
+  },
+  {
+    "name": "Thomas Werth",
+    "pid": "108143",
+    "party": "CDU",
+    "seat": "9-12"
+  },
+  {
+    "name": "Andrea Blome",
+    "pid": "109634",
+    "party": "GR\u00dcNE",
+    "seat": "8-5"
+  },
+  {
+    "name": "Anja Kallfelz",
+    "pid": "110689",
+    "party": "GR\u00dcNE",
+    "seat": "7-1"
+  },
+  {
+    "name": "",
+    "pid": "",
+    "party": "",
+    "seat": "2-2"
+  },
+  {
+    "name": "Dr. Annika Bürger",
+    "pid": "110108",
+    "party": "GR\u00dcNE",
+    "seat": "7-3"
+  },
+  {
+    "name": "Mathilda Harbering",
+    "pid": "113699",
+    "party": "GR\u00dcNE",
+    "seat": "8-3"
+  },
+  {
+    "name": "Dominic Brauner",
+    "pid": "112437",
+    "party": "GR\u00dcNE",
+    "seat": "6-3"
+  },
+  {
+    "name": "Leon Herbstmann",
+    "pid": "109927",
+    "party": "GR\u00dcNE",
+    "seat": "11-5"
+  },
+  {
+    "name": "Lena Ilsemann",
+    "pid": "112388",
+    "party": "GR\u00dcNE",
+    "seat": "12-5"
+  },
+  {
+    "name": "Dr. Robin Korte",
+    "pid": "109613",
+    "party": "GR\u00dcNE",
+    "seat": "6-5"
+  },
+  {
+    "name": "Carsten Peters",
+    "pid": "7127",
+    "party": "GR\u00dcNE",
+    "seat": "12-1"
+  },
+  {
+    "name": "Dr. Leandra Praetzel",
+    "pid": "110580",
+    "party": "GR\u00dcNE",
+    "seat": "7-5"
+  },
+  {
+    "name": "Katharina Könning",
+    "pid": "113779",
+    "party": "GR\u00dcNE",
+    "seat": "10-1"
+  },
+  {
+    "name": "Medya Mustafa",
+    "pid": "113783",
+    "party": "GR\u00dcNE",
+    "seat": "11-1"
+  },
+  {
+    "name": "Benedikt Spangenberg",
+    "pid": "110609",
+    "party": "GR\u00dcNE",
+    "seat": "6-1"
+  },
+  
+  {
+    "name": "Klaus Rosenau",
+    "pid": "108774",
+    "party": "GR\u00dcNE",
+    "seat": "8-1"
+  },
+  {
+    "name": "Christine Schulz",
+    "pid": "1760",
+    "party": "GR\u00dcNE",
+    "seat": "9-1"
+  },
+  {
+    "name": "Albert Wenzel",
+    "pid": "110582",
+    "party": "GR\u00dcNE",
+    "seat": "9-5"
+  },
+    {
+    "name": "Anna Hünker",
+    "pid": "110733",
+    "party": "GR\u00dcNE",
+    "seat": "10-5"
+  },
+  {
+    "name": "Michael Fiege",
+    "pid": "110810",
+    "party": "GR\u00dcNE",
+    "seat": "9-3"
+  },
+  {
+    "name": "Dr. Katharina Foreman",
+    "pid": "113607",
+    "party": "GR\u00dcNE",
+    "seat": "10-3"
+  },
+  {
+    "name": "Marie Diekmann",
+    "pid": "112507",
+    "party": "GR\u00dcNE",
+    "seat": "11-3"
+  },
+  {
+    "name": "Simon Haack",
+    "pid": "113781",
+    "party": "GR\u00dcNE",
+    "seat": "12-3"
+  },
+    {
+    "name": "Stephan Brinktrine",
+    "pid": "108809",
+    "party": "SPD",
+    "seat": "13-3"
+  },
+  {
+    "name": "Dr. Tanja Andor",
+    "pid": "110381",
+    "party": "SPD",
+    "seat": "14-3"
+  },
+  {
+    "name": "Doris Feldmann",
+    "pid": "109588",
+    "party": "SPD",
+    "seat": "13-5"
+  },
+  {
+    "name": "Noah Börnhorst",
+    "pid": "109960",
+    "party": "SPD",
+    "seat": "14-5"
+  },
+
+  {
+    "name": "Philipp Hagemann",
+    "pid": "108170",
+    "party": "SPD",
+    "seat": "15-1"
+  },
+  {
+    "name": "Lia Kirsch",
+    "pid": "110394",
+    "party": "SPD",
+    "seat": "15-5"
+  },
+  {
+    "name": "Charlotte Post",
+    "pid": "112189",
+    "party": "SPD",
+    "seat": "13-1"
+  },
+  {
+    "name": "Christian Lüer",
+    "pid": "110544",
+    "party": "SPD",
+    "seat": "14-1"
+  },
+
+  {
+    "name": "Maria Winkel",
+    "pid": "108751",
+    "party": "SPD",
+    "seat": "15-3"
+  },
+  {
+    "name": "J\u00f6rg Berens",
+    "pid": "109347",
+    "party": "FDP",
+    "seat": "15-8"
+  },
+  {
+    "name": "Claudia Grönefeld",
+    "pid": "109466",
+    "party": "FDP",
+    "seat": "14-8"
+  },
+  {
+    "name": "Sebastian Nahrwold",
+    "pid": "113782",
+    "party": "LINKE",
+    "seat": "4-10"
+  },
+  {
+    "name": "Fatma Karana",
+    "pid": "109487",
+    "party": "LINKE",
+    "seat": "6-10"
+  },
+  {
+    "name": "Jacob Bohé",
+    "pid": "113784",
+    "party": "LINKE",
+    "seat": "6-9"
+  },
+  {
+    "name": "Lara Bösche",
+    "pid": "113645",
+    "party": "LINKE",
+    "seat": "6-8"
+  },
+ {
+    "name": "Dr. Katharina Martinewski",
+    "pid": "112567",
+    "party": "LINKE",
+    "seat": "6-7"
+  },
+  
+  {
+    "name": "Michael Krapp",
+    "pid": "109693",
+    "party": "ÖDP",
+    "seat": "4-8"
+  },
+  {
+    "name": "Lars Nowak",
+    "pid": "110583",
+    "party": "PARTEI",
+    "seat": "4-7"
+  },
+  {
+    "name": "Stefan Proske-Schuppelius",
+    "pid": "110814",
+    "party": "LINKE",
+    "seat": "4-9"
+  },
+  {
+    "name": "",
+    "pid": "",
+    "party": "",
+    "seat": "2-4"
+  },
+  {
+    "name": "Helene Goldbeck",
+    "pid": "110585",
+    "party": "VOLT",
+    "seat": "4-2"
+  },
+    {
+    "name": "Sven Konopka",
+    "pid": "112508",
+    "party": "VOLT",
+    "seat": "4-3"
+  },
+  {
+    "name": "Maren Berkenheide",
+    "pid": "110731",
+    "party": "VOLT",
+    "seat": "4-4"
+  },
+  {
+    "name": "",
+    "pid": "",
+    "party": "",
+    "seat": "2-3"
+  },
+  {
+    "name": "Helmut Birke",
+    "pid": "109694",
+    "party": "AFD",
+    "seat": "2-11"
+  },
+  {
+    "name": "Holger Lucius",
+    "pid": "113756",
+    "party": "AFD",
+    "seat": "2-12"
+  },
+  {
+    "name": "Hans-Jürgen Scholte",
+    "pid": "113744",
+    "party": "OHNE",
+    "seat": "2-8"
+  },
+  {
+    "name": "Tilman Fuchs",
+    "pid": "107824",
+    "photo_url": "https://www.stadt-muenster.de/sessionnet/sessionnetbi/im/pe107824.png",
+    "photo_source": "Homepage der Stadt Münster",
+    "photo_link": "https://www.stadt-muenster.de/sessionnet/sessionnetbi/pe0051.php?__kpenr=107824",
+    "photo_link_date": "2026-03-13",    
+    "party": "GR\u00dcNE",
+    "seat": "17-7"
+  },
+  {
+    "name": "Robin Denstorff",
+    "pid": "110074",
+    "photo_url": "https://www.stadt-muenster.de/fileadmin/user_upload/stadt-muenster/rathaus/pics/sonstiges/dez_denstorff2022.jpg",
+    "photo_source": "Homepage der Stadt Münster",
+    "photo_link": "https://www.stadt-muenster.de/verwaltungsleitung/dezernat-3",
+    "photo_link_date": "2023-11-23",
+    "party": "STADT",
+    "position": "Stadtbaurat (Dezernat für Planung, Bau und Wirtschaft)",
+    "seat": "17-2"
+  },
+  {
+    "name": "Cornelia Wilkens",
+    "pid": "109838",
+    "photo_url": "https://www.stadt-muenster.de/fileadmin/user_upload/stadt-muenster/rathaus/pics/sonstiges/dez_wilkens.jpg",
+    "photo_source": "Homepage der Stadt Münster",
+    "photo_link": "https://www.stadt-muenster.de/verwaltungsleitung/dezernat-5.html",
+    "photo_link_date": "2021-12-12",
+    "party": "STADT",
+    "position": "Dezernentin für Soziales und Kultur",
+    "seat": "17-3"
+  },
+  {
+    "name": "Wolfgang Heuer",
+    "pid": "7106",
+    "party": "STADT",
+    "position": "Dezernat für Personal, Organisation, Ordnung, Feuerwehr und IT",
+    "seat": "17-4"
+  },
+  {
+    "name": "Thomas Paal",
+    "pid": "108683",
+    "party": "STADT",
+    "position": "Dezernat für Bildung, Jugend, Familie und Sport",
+    "seat": "17-8"
+  },
+  {
+    "name": "Arno Minas",
+    "pid": "112367",
+    "photo_url": "https://www.stadt-muenster.de/fileadmin/user_upload/stadt-muenster/00_rathaus/pics/minas_arno.jpg",
+    "photo_source": "Homepage der Stadt Münster",
+    "photo_link": "https://www.stadt-muenster.de/verwaltungsleitung/dezernat-6",
+    "photo_link_date": "2023-11-23",
+    "party": "STADT",
+    "position": "Dezernat für Wohnungsversorgung, Immobilien und Nachhaltigkeit",
+    "seat": "17-11"
+  },
+  {
+    "name": "Christine Zeller",
+    "pid": "110492",
+    "photo_url": "https://www.stadt-muenster.de/fileadmin/user_upload/stadt-muenster/rathaus/pics/sonstiges/dez_zeller.jpg",
+    "photo_source": "Homepage der Stadt Münster",
+    "photo_link": "https://www.stadt-muenster.de/verwaltungsleitung/dezernat-2.html",
+    "photo_link_date": "2021-12-12",
+    "party": "STADT",
+    "position": "Dezernat für Finanzen, Beteiligungen und Integration",
+    "seat": "17-10"
+  },
+  {
+    "name": "",
+    "pid": "",
+    "party": "",
+    "seat": "17-12"
+  },
+  {
+    "name": "Andreas Lembeck",
+    "party": "STADT",
+    "position": "Geschäftsführung Rat und Hauptausschuss",
+    "seat": "17-6"
+  },
+  {
+    "name": "Verwaltung",
+    "seat": "19-7"
+  },
+  {
+    "name": "Verwaltung",
+    "seat": "19-8"
+  },
+  {
+    "name": "Verwaltung",
+    "seat": "19-6"
+  },
+  {
+    "name": "Verwaltung",
+    "seat": "19-2"
+  },
+  {
+    "name": "Verwaltung",
+    "seat": "19-3"
+  },
+  {
+    "name": "Verwaltung",
+    "seat": "19-4"
+  },
+  {
+    "name": "Verwaltung",
+    "seat": "19-10"
+  },
+  {
+    "name": "Verwaltung",
+    "seat": "19-11"
+  },
+  {
+    "name": "Verwaltung",
+    "seat": "19-12"
+  },
+  {
+    "name": "",
+    "seat": "0-1"
+  },
+  {
+    "name": "",
+    "seat": "0-2"
+  },
+  {
+    "name": "",
+    "seat": "0-3"
+  },
+  {
+    "name": "",
+    "seat": "0-4"
+  },
+  {
+    "name": "Presse",
+    "seat": "0-10"
+  },
+  {
+    "name": "Presse",
+    "seat": "0-11"
+  },
+  {
+    "name": "Presse",
+    "seat": "0-12"
+  },
+  {
+    "name": "Presse",
+    "seat": "0-7"
+  },
+  {
+    "name": "Presse",
+    "seat": "0-8"
+  },
+  {
+    "name": "Presse",
+    "seat": "0-9"
+  }
+]
