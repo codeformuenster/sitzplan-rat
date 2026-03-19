@@ -138,7 +138,15 @@ def writeSitzplanHtml(seatingConfig):
 
     seats = {}
     for member in members:
-        seats[member.get("seat")] = member
+        if member.get("seat") in seats:
+            LOGGER.warning(
+                "Seat '%s' already occupied by '%s' - cannot assign to '%s'",
+                member.get("seat"),
+                seats[member.get("seat")].get("name"),
+                member.get("name"),
+            )
+        else:
+          seats[member.get("seat")] = member
 
     sitzplanRows = seatingConfig.get("rows")
     sitzplanCols = seatingConfig.get("columns")
